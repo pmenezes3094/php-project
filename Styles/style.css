@@ -1,3 +1,13 @@
+/*Universal Styles*/
+
+:root {
+    --color1: #ffffff;
+    --color2: #cccccc;
+    --color3: #666666;
+    --color4: #333333;
+    --color5: #000000;
+  }
+
 html {
     margin: 0;
 }
