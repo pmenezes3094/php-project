@@ -27,6 +27,10 @@ html {
     font-family: var(--secondary);
 }
 
+body {
+    margin: 0px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
