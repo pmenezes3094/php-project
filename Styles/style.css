@@ -13,8 +13,8 @@
     --modalBackgrounTransparency: rgba(0, 0, 0, 0.4);
 
     --primaryColor: #805A93;
-    --secondaryColor: #FB5897;
-    --tertiaryColor: #F6C0B4;
+    --secondaryColor: #CB167E;
+    --tertiaryColor: #FFEBE3;
 
     /*Font Size*/
     --large: 24px;
@@ -49,6 +49,7 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--primaryFont);
+    color: var(--primaryColor);
 }
 
 a, a:hover, a:link, a:visited {
@@ -86,6 +87,33 @@ form label,
 form textarea, form input {
     display: block;
     margin: 10px 0;
+    color: var(--color3);
+}
+
+form textarea, form input {
+    border: 1px solid var(--color2);
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    background-color: var(--tertiaryColor);
+}
+
+label {
+    display: block;
+    text-align: left;
 }
 
 .functionalities {
@@ -154,3 +182,5 @@ form textarea, form input {
 .card-grid-item {
     background-color: var(--color2);
 }
+
+

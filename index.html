@@ -8,20 +8,22 @@
     <script src="Scripts/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Login</h2>
-        <form action="login.php" method="POST">
-            <label for="user_id">User ID:</label>
-            <input type="text" id="user_id" name="user_id" required>
+    <div class="form-container">
+        <div class="container">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" name="user_id" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-            <input type="button" value="Login"  onClick="submitForm()" class="form-button">
-        </form>
-        <div class="button-container">
-            <a href="registrationForm.html">New User Registration</a>
-            <a href="passwordReset.html">Forgot Password</a>
+                <input type="button" value="Login"  onClick="submitForm()" class="form-button">
+            </form>
+            <div class="button-container">
+                <a href="registrationForm.html">New User Registration</a>
+                <a href="passwordReset.html">Forgot Password</a>
+            </div>
         </div>
     </div>
 </body>
