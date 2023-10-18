@@ -34,7 +34,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color5);
 }
 
 main {
@@ -102,10 +101,10 @@ form textarea, form input {
 div {
     padding: 20px;
     border-radius: 5px;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
     margin: 10px;
 }
 
 .card-grid-item {
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
