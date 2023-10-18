@@ -46,6 +46,10 @@ form textarea, form input {
     margin: 10px 0;
 }
 
+.functionalities {
+    background-color: var(--color5);
+}
+
 /*Cards Style*/
 
 .card-grid-container {
