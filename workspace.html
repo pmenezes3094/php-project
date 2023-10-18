@@ -75,5 +75,21 @@
             <button class="modal-save-button" onclick="saveTextNote()">Save</button>
         </div>
     </div>
+
+    <!-- The Audio Modal -->
+    <div id="audioModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('audioModal')">&times;</span>
+            <h2>Add Audio</h2>
+            <form>
+                <label for="audioFile">Upload Audio File:</label>
+                <input type="file" id="audioFile" name="audioFile">
+                <label for="tags">Tags:</label>
+                <textarea id="tags" name="tags" rows="4" required></textarea>
+            </form>
+            <button class="modal-close-button" onclick="closeModal('audioModal')">Close</button>
+            <button class="modal-save-button" onclick="saveAudio()">Save</button>
+        </div>
+    </div>
 </body>
 </html>
