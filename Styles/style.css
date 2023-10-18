@@ -27,6 +27,11 @@ div {
     margin: 10px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*Modal Style*/
 .modal {
     display: none;
