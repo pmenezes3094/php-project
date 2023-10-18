@@ -16,13 +16,6 @@
     ---small: 16px;
 }
 
-div {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: var(--color2);
-    margin: 10px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -87,4 +80,13 @@ form textarea, form input {
 
 .modal h2 {
     margin-top: 0;
+}
+
+/*Demarcation Style*/
+
+div {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--color2);
+    margin: 10px;
 }
