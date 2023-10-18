@@ -31,6 +31,14 @@ body {
     margin: 0px;
 }
 
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
  padding: 5px;
 }
@@ -40,10 +48,6 @@ button {
     margin: 5px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
 main {
     text-align: center;
