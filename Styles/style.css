@@ -52,6 +52,18 @@ a {
  padding: 5px;
 }
 
+.searchField {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.searchField input {
+    width: 800px;
+    padding: 10px 0px;
+}
+
 button {
     padding: 5px;
     margin: 5px;
