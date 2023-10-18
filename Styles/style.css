@@ -16,10 +16,6 @@
     ---small: 16px;
   }
 
-html {
-    margin: 0;
-}
-
 div {
     padding: 20px;
     border-radius: 5px;
