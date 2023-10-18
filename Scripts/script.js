@@ -42,6 +42,19 @@ function saveTextNote() {
     const tags = document.getElementById("tags").value;
 
     // logic to handle the text note 
+    
     // Close the modal
     closeModal('textNoteModal');
+}
+
+// Function to save the audio
+function saveAudio() {
+    // Retrieve values from form fields
+    const audioFile = document.getElementById("audioFile").value;
+    const tags = document.getElementById("tags").value;
+
+    // logic to handle the audio comes here
+
+    // Close the modal
+    closeModal('audioModal');
 }
