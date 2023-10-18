@@ -47,9 +47,14 @@ main {
     text-align: center;
 }
 
-a {
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primaryFont);
+}
+
+a, a:hover, a:link, a:visited {
     padding: 5px;
     font-family: var(--primary);
+    color: var(--secondaryColor);
 }
 
 .logo {
