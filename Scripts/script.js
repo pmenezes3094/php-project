@@ -42,7 +42,7 @@ function saveTextNote() {
     const tags = document.getElementById("tags").value;
 
     // logic to handle the text note 
-    
+
     // Close the modal
     closeModal('textNoteModal');
 }
@@ -57,4 +57,16 @@ function saveAudio() {
 
     // Close the modal
     closeModal('audioModal');
+}
+
+// Function to save the photo
+function savePhoto() {
+    // Retrieve values from form fields
+    const photoFile = document.getElementById("photoFile").value;
+    const tags = document.getElementById("tags").value;
+
+    // logic to handle the photo
+
+    // Close the modal
+    closeModal('photoModal');
 }
