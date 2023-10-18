@@ -8,6 +8,7 @@
     --color3: #666666;
     --color4: #333333;
     --color5: #000000;
+    --modalBackgrounTransparency: rgba(0, 0, 0, 0.4);
 
     /*Fonts*/
     --large: 24px;
@@ -24,4 +25,40 @@ div {
     border-radius: 5px;
     background-color: var(--color2);
     margin: 10px;
+}
+
+/*Modal Style*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modalBackgrounTransparency);
+}
+
+.modal-content {
+    background-color: var(--color1);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid var(--color3);
+    width: 70%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.modal h2 {
+    margin-top: 0;
 }
