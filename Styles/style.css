@@ -73,13 +73,13 @@ a, a:hover, a:link, a:visited {
     padding: 10px 0px;
 }
 
-button {
+button, .form-button {
     padding: 5px;
     margin: 5px;
-    background-color: var(--color2);
-    border: 0.5px solid var(--color3);
+    background-color: var(--secondaryColor);
+    border: 0.5px solid var(--secondaryColor);
     border-radius: 5px;
-    color: var(--color3);
+    color: var(--color1);
 }
 
 form label,
