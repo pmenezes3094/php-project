@@ -32,6 +32,10 @@ header {
     justify-content: space-between;
 }
 
+main {
+    text-align: center;
+}
+
 /*Modal Style*/
 .modal {
     display: none;
