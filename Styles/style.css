@@ -36,6 +36,12 @@ main {
     text-align: center;
 }
 
+form label,
+form textarea, form input {
+    display: block;
+    margin: 10px 0;
+}
+
 /*Modal Style*/
 .modal {
     display: none;
@@ -57,12 +63,6 @@ main {
     width: 70%;
     max-width: 500px;
     position: relative;
-}
-
-.modal-content form label,
-.modal-content form textarea {
-    display: block;
-    margin: 10px 0;
 }
 
 .close {
