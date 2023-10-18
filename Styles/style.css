@@ -91,6 +91,12 @@ button, .form-button {
     color: var(--color1);
 }
 
+.card-grid-item {
+    margin: 20px;
+    border: 5px;
+    box-shadow: 2px 3px 171px rgba(0, 0, 0, 0.04);
+}
+
 form label,
 form textarea, form input {
     display: block;
@@ -146,10 +152,11 @@ footer button {
     gap: 10px; /* Spacing between grid items */
 }
 
-.grid-item {
-    background-color: var(--color2);
+.card-grid-item {
+    background-color: var(--color1);
+    border-radius: 5px;
     padding: 10px;
-    border: 1px solid var(--color2);
+    box-shadow: 2px 3px 50px rgba(0, 0, 0, 0.1);
 }
 
 /*Modal Style*/
@@ -187,19 +194,6 @@ footer button {
 
 .modal h2 {
     margin-top: 0;
-}
-
-/*Demarcation Style*/
-
-/* div {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: var(--color2);
-    margin: 10px;
-} */
-
-.card-grid-item {
-    background-color: var(--color2);
 }
 
 
