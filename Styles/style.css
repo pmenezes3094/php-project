@@ -31,6 +31,10 @@ body {
     margin: 0px;
 }
 
+.logo {
+ padding: 5px;
+}
+
 button {
     padding: 5px;
     margin: 5px;
