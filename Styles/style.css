@@ -59,6 +59,12 @@ main {
     position: relative;
 }
 
+.modal-content form label,
+.modal-content form textarea {
+    display: block;
+    margin: 10px 0;
+}
+
 .close {
     position: absolute;
     top: 0;
