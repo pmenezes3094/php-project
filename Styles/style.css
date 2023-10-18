@@ -102,12 +102,12 @@ form textarea, form input {
 
 /*Demarcation Style*/
 
-div {
+/* div {
     padding: 20px;
     border-radius: 5px;
-    /* background-color: var(--color2); */
+    background-color: var(--color2);
     margin: 10px;
-}
+} */
 
 .card-grid-item {
     background-color: var(--color2);
