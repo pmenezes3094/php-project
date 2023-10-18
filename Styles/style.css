@@ -12,10 +12,15 @@
     --color5: #000000;
     --modalBackgrounTransparency: rgba(0, 0, 0, 0.4);
 
-    /*Fonts*/
+    /*Font Size*/
     --large: 24px;
     --medium: 20px;
     ---small: 16px;
+
+    /*Fonts*/
+    --primary: 'Poppins', sans-serif;
+    --secondary: 'Crimson Pro', serif;
+    --tertiary: 'Sacramento', cursive;
 }
 
 header {
