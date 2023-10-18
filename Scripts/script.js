@@ -10,6 +10,11 @@ function submitForm() {
     window.location.href = "workspace.html";
 }
 
+function goBack() {
+    //Redirect back to previous page
+    window.history.back();
+}
+
 /*Modal Related Code */
 
 // Function to open the modal
