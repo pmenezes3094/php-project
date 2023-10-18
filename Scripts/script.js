@@ -70,3 +70,15 @@ function savePhoto() {
     // Close the modal
     closeModal('photoModal');
 }
+
+// Function to save the video
+function saveVideo() {
+    // Retrieve values from form fields
+    const videoFile = document.getElementById("videoFile").value;
+    const tags = document.getElementById("tags").value;
+
+    //logic to handle the video comes here
+
+    // Close the modal
+    closeModal('videoModal');
+}
