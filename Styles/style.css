@@ -12,19 +12,23 @@
     --color5: #000000;
     --modalBackgrounTransparency: rgba(0, 0, 0, 0.4);
 
+    --primaryColor: #805A93;
+    --secondaryColor: #FB5897;
+    --tertiaryColor: #F6C0B4;
+
     /*Font Size*/
     --large: 24px;
     --medium: 20px;
     ---small: 16px;
 
     /*Fonts*/
-    --primary: 'Poppins', sans-serif;
-    --secondary: 'Crimson Pro', serif;
-    --tertiary: 'Sacramento', cursive;
+    --primaryFont: 'Poppins', sans-serif;
+    --secondaryFont: 'Crimson Pro', serif;
+    --tertiaryFont: 'Sacramento', cursive;
 }
 
 html {
-    font-family: var(--secondary);
+    font-family: var(--secondaryFont);
 }
 
 body {
