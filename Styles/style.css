@@ -90,3 +90,7 @@ div {
     background-color: var(--color2);
     margin: 10px;
 }
+
+.card-grid-item {
+    background-color: var(--color1);
+}
