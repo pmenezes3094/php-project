@@ -50,6 +50,7 @@ header {
 
 main {
     text-align: center;
+    padding: 20px 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -127,6 +128,9 @@ footer {
     padding: 20px 0px;
     background-color: var(--primaryColor);
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer button {
