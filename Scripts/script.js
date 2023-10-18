@@ -22,7 +22,7 @@ function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none";
 }
 
-// Function to save the URL (you can customize this part)
+// Function to save the URL
 function saveURL() {
     // Retrieve values from form fields
     const url = document.getElementById("url").value;
