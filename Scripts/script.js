@@ -82,3 +82,15 @@ function saveVideo() {
     // Close the modal
     closeModal('videoModal');
 }
+
+// Function to save the document
+function saveDocument() {
+    // Retrieve values from form fields
+    const documentFile = document.getElementById("documentFile").value;
+    const tags = document.getElementById("tags").value;
+
+    // logic to handle the document comes here
+
+    // Close the modal
+    closeModal('documentModal');
+}
