@@ -41,5 +41,23 @@
             <button>Document</button>
         </div>
     </main>
+
+    <!-- The URL Modal -->
+    <div id="urlModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('urlModal')">&times;</span>
+            <h2>Add URL</h2>
+            <form>
+                <label for="url">Link:</label>
+                <input type="url" id="url" name="url" required>
+                <label for="linkName">Link Name:</label>
+                <input type="text" id="linkName" name="linkName" required>
+                <label for="tags">Tags:</label>
+                <textarea id="tags" name="tags" rows="4" required></textarea>
+            </form>
+            <button class="modal-close-button" onclick="closeModal('urlModal')">Close</button>
+            <button class="modal-save-button" onclick="saveURL()">Save</button>
+        </div>
+    </div>
 </body>
 </html>
