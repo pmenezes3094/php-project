@@ -39,6 +39,16 @@ header {
     align-items: center;
 }
 
+main {
+    text-align: center;
+}
+
+a {
+    padding: 5px;
+    font-family: var(--primary);
+    color: var(--color1);
+}
+
 .logo {
  padding: 5px;
 }
@@ -46,11 +56,6 @@ header {
 button {
     padding: 5px;
     margin: 5px;
-}
-
-
-main {
-    text-align: center;
 }
 
 form label,
