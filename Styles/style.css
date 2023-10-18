@@ -23,6 +23,10 @@
     --tertiary: 'Sacramento', cursive;
 }
 
+html {
+    font-family: var(--secondary);
+}
+
 header {
     display: flex;
     justify-content: space-between;
