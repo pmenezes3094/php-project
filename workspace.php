@@ -60,7 +60,7 @@
             <div class="card-grid-item">
                 <div class="card-content">
                     <a href="https://www.weloveflorists.com/floral-blogs/" target="_blank">
-                        <img src="Assets/website-header.png" alt="External Link"> Visit weloveflorists.com
+                        <img src="Assets/website-header.png" alt="weloveflorists.com header page which has flowers"> Visit weloveflorists.com
                     </a>
                 </div>
             </div>
