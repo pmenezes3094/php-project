@@ -184,9 +184,9 @@
     <!-- The login Success Modal -->
     <div id="loginSuccessfulModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('photoModal')">&times;</span>
+            <span class="close" onclick="closeModal('loginSuccessfulModal')">&times;</span>
             <h2>Login Successful</h2>
-            <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
+            <button class="modal-close-button" onclick="closeModal('loginSuccessfulModal')">Close</button>
         </div>
     </div>
 </body>
