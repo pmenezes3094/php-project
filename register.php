@@ -4,7 +4,7 @@ $username = "username";
 $password = "password";
 $dbname = "phpproject";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new PDO($dsn, $username, $password);
 
 $fullname = $_POST['fullname'];
 $email = $_POST['email'];
