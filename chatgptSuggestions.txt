@@ -1,3 +1,9 @@
+Final Improvements for working 
+1. Alt text wordings
+2. linking multimedia files over embedding them in the file
+3. Creating user profiles for cutomised profile settings
+4. Implement validation techniques for security checks
+
 Feedback received from students
 - Consider implementing a single "Upload" button that
 automatically detects the file type to streamline the user interface.
