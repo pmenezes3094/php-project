@@ -16,4 +16,13 @@ $stmt = $conn->prepare($sql);
 
 //Space to bind parameters
 
+if ($stmt->execute()) {
+    echo '<script>alert("Password updated successfully.");</script>';
+    echo '<script>window.location.href = "index.php";</script>';
+} 
+else 
+{
+    echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+}
+
 ?>
