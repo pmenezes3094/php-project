@@ -1,3 +1,8 @@
+Priya Menezes
+
+Score 3/4
+
+
 Improvements to do in next two hours
 1. Update alt text messages
 2. Login Sucessful message
