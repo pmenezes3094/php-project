@@ -11,7 +11,7 @@
     <div class="form-container">
         <div class="container">
             <div class="logo">
-                <img src="Assets/logo.png" alt ="Website logo which has words written as Project Abundance by Priya Menezes" height="30 px">
+                <img src="Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
             </div>
             <h2>Login</h2>
             <form action="login.php" method="POST">

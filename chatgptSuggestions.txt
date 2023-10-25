@@ -17,3 +17,5 @@ Form Submission: The form's action attribute points to the same page (login.php)
 Links for New User Registration and Password Reset: The links to the registration and password reset pages should lead to the appropriate pages where users can take action. Ensure that the URLs are correct and correspond to the actual registration and password reset pages.
 
 HTML5 Doctype: You're using the HTML5 doctype, which is appropriate. Just ensure that your page's content is compliant with HTML5 standards.
+
+Suggestions considered for implementation : Alt Text for Images: ,
