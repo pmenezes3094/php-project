@@ -21,4 +21,12 @@ $stmt->bindParam(':email', $email, PDO::PARAM_STR);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
+if ($stmt->execute()) {
+    echo "User registered successfully.";
+} 
+else 
+{
+    echo "Error: " . $stmt->errorInfo()[2];
+}
+
 ?>
