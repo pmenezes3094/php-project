@@ -14,4 +14,6 @@ $password = $_POST['password'];
 
 $stmt = $conn->prepare($sql);
 
+//Space to bind parameters
+
 ?>
