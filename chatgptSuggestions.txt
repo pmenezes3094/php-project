@@ -14,6 +14,21 @@ excited about those pages.
 - How will you handle security of file uploads by users?
 - Media storage system. File sanitation
 
+Improvsing student feeback 
+
+Here's a condensed version of the feedback:
+
+Suggesting an automatic file type detection feature for a single "Upload" button.
+Compliments on site color and design.
+Encouragement to work on additional pages with anticipation.
+Positive remarks about well-implemented links.
+Inquiry about data storage plan, particularly for large files.
+Concern about the visibility of the menu at the bottom of the screen.
+Suggesting structured data input starting with data type selection.
+Choice between embedding or linking multimedia files for better user experience.
+Emphasizing the need for robust file upload security.
+Highlighting the importance of media storage and file sanitation practices.
+
 INDEX PAGE
 
 Prompt : critique this php code (provided my index page code here)
