@@ -179,5 +179,14 @@
             <button class="modal-save-button" onclick="saveDocument()">Save</button>
         </div>
     </div>
+
+    <!-- The login Success Modal -->
+    <div id="loginSuccessful" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('photoModal')">&times;</span>
+            <h2>Login Successful</h2>
+            <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
+        </div>
+    </div>
 </body>
 </html>
