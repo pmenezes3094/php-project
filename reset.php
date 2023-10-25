@@ -14,7 +14,8 @@ $sql = "UPDATE user SET password = :newPassword WHERE username = :username";
 
 $stmt = $conn->prepare($sql);
 
-//Space to bind parameters
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+$stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
 if ($stmt->execute()) {
     echo '<script>alert("Password updated successfully.");</script>';
