@@ -23,6 +23,7 @@ $stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
 if ($stmt->execute()) {
     echo '<script>alert("User registered successfully.");</script>';
+    echo '<script>window.location.href = "index.php";</script>';
 } 
 else 
 {
