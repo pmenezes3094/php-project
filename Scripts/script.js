@@ -18,6 +18,17 @@ function goBack() {
 /*Validation Functions*/
 
 //Function to validate that password and re-enter password have same fields
+function validatePassword() {
+    var password = document.getElementById('password').value;
+    var repassword = document.getElementById('repassword').value;
+
+    if (password !== repassword) {
+        alert("Passwords do not match. Please re-enter your password.");
+        return false;
+    }
+
+    return true;
+}
 
 /*Modal Related Code */
 
