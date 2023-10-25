@@ -3,6 +3,7 @@ Final Improvements for working
 2. linking multimedia files over embedding them in the file
 3. Creating user profiles for cutomised profile settings
 4. Implement validation techniques for security checks
+5. Notifications and validation messages
 
 Feedback received from students
 - Consider implementing a single "Upload" button that
