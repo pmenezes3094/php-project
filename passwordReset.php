@@ -14,7 +14,7 @@
                 <img src="Assets/logo.png" alt ="Website logo which has words written as Project Abundance by Priya Menezes" height="30 px">
             </div>
             <h2>Password Reset Form</h2>
-            <form action="reset_password.php" method="POST" onsubmit="return validatePassword();">
+            <form action="reset.php" method="POST" onsubmit="return validatePassword();">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
