@@ -24,8 +24,8 @@
                 <input type="button" value="Login"  onClick="submitForm()" class="form-button">
             </form>
             <div class="button-container">
-                <a href="registrationForm.html">New User Registration</a>
-                <a href="passwordReset.html">Forgot Password</a>
+                <a href="registrationForm.php">New User Registration</a>
+                <a href="passwordReset.php">Forgot Password</a>
             </div>
         </div>
     </div>

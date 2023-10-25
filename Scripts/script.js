@@ -2,12 +2,12 @@
 
 function goToHomePage() {
     //Redirect to homepage
-    window.location.href = "index.html";
+    window.location.href = "index.php";
 }
 
 function submitForm() {
     //Redirect to workspace page
-    window.location.href = "workspace.html";
+    window.location.href = "workspace.php";
 }
 
 function goBack() {
