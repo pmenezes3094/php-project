@@ -30,7 +30,7 @@
         <div class="card-grid-container">
             <div class="card-grid-item">
                 <div class="card-content">
-                    <img src="Assets/demo-image.jpeg">
+                    <img src="Assets/demo-image.jpeg" alt="pink flowers">
                 </div>
             </div>
             
