@@ -5,6 +5,8 @@ $password = 123; // Your MySQL password
 
 $conn = new PDO($dsn, $username, $password);
 
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 $fullname = $_POST['fullname'];
 $email = $_POST['email'];
 $username = $_POST['username'];
