@@ -99,3 +99,8 @@ function saveDocument() {
     // Close the modal
     closeModal('documentModal');
 }
+
+// Function to show login success message
+function loginSuccessful() {
+
+}
