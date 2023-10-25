@@ -7,7 +7,6 @@ function goToHomePage() {
 
 function submitForm() {
     //Redirect to workspace page
-    document.getElementById(modalId).style.display = "block";
     window.location.href = "workspace.html";
 }
 
@@ -99,4 +98,9 @@ function saveDocument() {
 
     // Close the modal
     closeModal('documentModal');
+}
+
+window.onload = function()
+{
+    document.getElementById('loginSuccessfulModal').style.display = 'block';
 }
