@@ -22,10 +22,10 @@ $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
 if ($stmt->execute()) {
-    echo "User registered successfully.";
+    echo '<script>alert("User registered successfully.");</script>';
 } 
 else 
 {
-    echo "Error: " . $stmt->errorInfo()[2];
+    echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
 }
 ?>
