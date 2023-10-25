@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <title>Workspace</title>
+    <script src="Scripts/onLoad.js"></script>
     <script src="Scripts/script.js"></script>
 </head>
 <body>
