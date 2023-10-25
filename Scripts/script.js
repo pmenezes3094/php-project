@@ -99,8 +99,3 @@ function saveDocument() {
     // Close the modal
     closeModal('documentModal');
 }
-
-window.onload = function()
-{
-    document.getElementById('loginSuccessfulModal').style.display = 'block';
-}
