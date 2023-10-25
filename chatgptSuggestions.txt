@@ -18,4 +18,4 @@ Links for New User Registration and Password Reset: The links to the registratio
 
 HTML5 Doctype: You're using the HTML5 doctype, which is appropriate. Just ensure that your page's content is compliant with HTML5 standards.
 
-Suggestions considered for implementation : Alt Text for Images: ,
+Suggestions considered for implementation : Alt Text for Images
