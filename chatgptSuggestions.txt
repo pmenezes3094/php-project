@@ -1,3 +1,7 @@
+Improvements to do in next two hours
+1. Update alt text messages
+2. Login Sucessful message
+
 Final Improvements for working 
 1. Alt text wordings
 2. linking multimedia files over embedding them in the file
