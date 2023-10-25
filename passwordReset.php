@@ -18,11 +18,11 @@
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
-                <label for="newpassword">New Password:</label>
-                <input type="password" id="newpassword" name="newpassword" required>
+                <label for="password">New Password:</label>
+                <input type="password" id="password" name="password" required>
 
-                <label for="renewpassword">Re-enter New Password:</label>
-                <input type="password" id="renewpassword" name="renewpassword" required>
+                <label for="repassword">Re-enter New Password:</label>
+                <input type="password" id="repassword" name="repassword" required>
 
                 <input type="submit" value="Reset Password" class="form-button">
                 <input type="reset" value="Clear" class="form-button">
