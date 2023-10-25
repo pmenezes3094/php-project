@@ -10,7 +10,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "UPDATE user SET password = :newPassword WHERE username = :username";
+$sql = "UPDATE user SET password = :password WHERE username = :username";
 
 $stmt = $conn->prepare($sql);
 
