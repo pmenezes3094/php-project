@@ -15,6 +15,10 @@ function goBack() {
     window.history.back();
 }
 
+/*Validation Functions*/
+
+//Function to validate that password and re-enter password have same fields
+
 /*Modal Related Code */
 
 // Function to open the modal
