@@ -10,4 +10,6 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+//Space for SQL query
+
 ?>
