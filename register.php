@@ -28,5 +28,4 @@ else
 {
     echo "Error: " . $stmt->errorInfo()[2];
 }
-
 ?>
