@@ -1,3 +1,19 @@
+Feedback received from students
+- Consider implementing a single "Upload" button that
+automatically detects the file type to streamline the user interface.
+- The colouring she chooses looks so good, and the design
+and looks of the site look so lovely. 
+- She needs to work on the other pages, which must be included. 
+- She needs to work on the other pages. As she explained, she felt
+excited about those pages. 
+- The links look good as well.
+- What's the data storage plan? How are large files handled?
+- I found the menu at the bottom of the screen a little hard to see
+- ‘add new’ button and then first asks for data type if can’t make auto data type selection. 
+- For multimedia in large files maybe look into including a link to the video or file, rather than embedding it on the site.
+- How will you handle security of file uploads by users?
+- Media storage system. File sanitation
+
 INDEX PAGE
 
 Prompt : critique this php code (provided my index page code here)
@@ -65,4 +81,5 @@ Error Handling: Implement robust error handling to provide users with clear feed
 Data Export/Import: Offer the ability for users to export and import their workspace data for backup or transfer to other platforms.
 
 These are just a few ideas for enhancing your workspace application. The specific features you should add will depend on your project's goals, user requirements, and available resources. It's essential to prioritize features based on user needs and the project's scope.
+
 
