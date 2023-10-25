@@ -14,7 +14,7 @@
                 <img src="Assets/logo.png" alt ="Website logo which has words written as Project Abundance by Priya Menezes" height="30 px">
             </div>
             <h2>Registration Form</h2>
-            <form action="register.php" method="POST">
+            <form action="register.php" method="POST" onsubmit="return validatePassword();">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
 
