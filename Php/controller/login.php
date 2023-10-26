@@ -12,7 +12,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $username = $_POST["username"];
 
-$sql = "SELECT password FROM user WHERE username = :username";
+$sql = "SELECT username, password, fullname FROM user WHERE username = :username";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':username', $username);
 $stmt->execute();
