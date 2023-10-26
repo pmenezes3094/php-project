@@ -15,6 +15,15 @@ $stmt->execute();
 
 $user = $stmt->fetch();
 
+if ($user) 
+{
+    $password = $user['password'];
+} 
+else 
+{
+    echo '<script>alert("Login Successful");</script>';
+}
+
 // if ($stmt->execute()) {
 //     echo '<script>alert("Login Successful");</script>';
 //     echo '<script>window.location.href = "workspace.php";</script>';
