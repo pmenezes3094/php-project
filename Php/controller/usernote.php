@@ -12,4 +12,5 @@ $textNote = $_POST['textNote'];
 $sql = "INSERT INTO userNotes (textNote) VALUES (:textNote)";
 $stmt = $conn->prepare($sql);
 
+$stmt->bindParam(':textNote', $textNote, PDO::PARAM_STR);
 ?>
