@@ -1,4 +1,7 @@
 <?php
+session_start(); 
+$username = $_SESSION['username'];
+
 $dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
 $username = 'da'; 
 $password = 123; 
@@ -9,9 +12,10 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $textNote = $_POST['textNote'];
 
-$sql = "INSERT INTO userNotes (textNote) VALUES (:textNote)";
+$sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
 $stmt = $conn->prepare($sql);
 
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->bindParam(':textNote', $textNote, PDO::PARAM_STR);
 $stmt->execute();
 
