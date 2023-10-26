@@ -21,7 +21,7 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
 
-                <input type="button" value="Login"  onClick="submitForm()" class="form-button">
+                <input type="submit" value="Login" class="form-button">
             </form>
             <div class="button-container">
                 <a href="registrationForm.php">New User Registration</a>
