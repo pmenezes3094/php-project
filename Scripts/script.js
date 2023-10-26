@@ -5,11 +5,6 @@ function goToHomePage() {
     window.location.href = "index.php";
 }
 
-function submitForm() {
-    //Redirect to workspace page
-    window.location.href = "workspace.php";
-}
-
 function goBack() {
     //Redirect back to previous page
     window.history.back();
@@ -114,3 +109,9 @@ function saveDocument() {
     // Close the modal
     closeModal('documentModal');
 }
+
+/*Functions that work without validations*/
+// function submitForm() {
+//     //Redirect to workspace page
+//     window.location.href = "workspace.php";
+// }
