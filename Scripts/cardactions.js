@@ -14,8 +14,8 @@ function createTextNote() {
         </div>
     `;
 
-    var contentHolder = document.getElementById('noteContainer');
-    contentHolder.innerHTML = cardHTML;
+    var newNoteSpace = document.getElementById('newNotes');
+    newNoteSpace.innerHTML = cardHTML;
     // Close the modal
     closeModal('textNoteModal');
 }
