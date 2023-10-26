@@ -10,7 +10,11 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//create and execute a select query to retrive all text notes
+$sql = "SELECT textNote FROM usernotes WHERE username = :username";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+$stmt->execute();
+
 //check for number of results
     //if more than one result store in array variable
         // run a loop until end of array
