@@ -26,9 +26,9 @@
                 <textarea id="textNote" name="textNote" rows="4" required></textarea>
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
+                <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('textNoteModal')">Close</button>
-            <button class="modal-save-button" onclick="saveTextNote()">Save</button>
         </div>
     </div>
 
