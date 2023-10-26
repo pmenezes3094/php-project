@@ -31,7 +31,7 @@ if ($user)
     }
     else 
     {
-        echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+        echo '<script>alert("Username and password do not match");</script>';
     }
 } 
 else 
