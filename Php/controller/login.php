@@ -28,6 +28,9 @@ if ($user)
     $storedPassword = $user['password'];
     if ($enteredPassword === $storedPassword)
     {
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['fullname'] = $user['fullname'];
+
         echo '<script>alert("Login Successful");</script>';
         echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
