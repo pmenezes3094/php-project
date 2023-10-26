@@ -4,7 +4,15 @@ function createTextNote() {
     const textNote = document.getElementById("textNote").value;
     const tags = document.getElementById("tags").value;
 
-    // logic to handle the text note 
+    const cardHTML = `
+        <div class="card-grid-item">
+            <div class="card-content">
+                <p>
+                    ${textNote}
+                </p>
+            </div>
+        </div>
+    `;
 
     // Close the modal
     closeModal('textNoteModal');
