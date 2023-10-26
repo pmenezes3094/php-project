@@ -1,5 +1,3 @@
-<!-- Div 2: Message - "Data Cards" -->
-<div class="card-grid-container">
     <div class="card-grid-item">
         <div class="card-content">
             <img src="../../Assets/demo-image.jpeg" alt="pink flowers">
@@ -35,7 +33,3 @@
             </a>
         </div>
     </div>
-
-    <div id="noteContainer">
-    </div>
-</div>
