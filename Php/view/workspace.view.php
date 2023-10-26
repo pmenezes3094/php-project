@@ -40,8 +40,7 @@
     
     <div class="card-grid-container">
         <?php require 'partials/modals.php'?>
-        <div id="noteContainer">
+        <div id="noteContainer"></div>
     </div>
-</div>
 </body>
 </html>
