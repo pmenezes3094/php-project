@@ -15,8 +15,8 @@
             </div>
             <h2>Login</h2>
             <form action="logincheck.php" method="POST">
-                <label for="user_id">User ID:</label>
-                <input type="text" id="user_id" name="user_id" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
