@@ -24,8 +24,11 @@
             <input type="text" id="searchField" placeholder="Search...">
             <button id="searchButton">Search</button>
         </div>
-    
-        <?php require 'partials/dummycards.php'?>
+
+        <div class="card-grid-container">
+            <?php require 'partials/dummycards.php'?>
+            <div id="newNotes"></div>
+        </div>
     </main>
 
         
@@ -37,10 +40,7 @@
         <button onclick="openModal('videoModal')">Video</button>
         <button onclick="openModal('documentModal')">Document</button> -->
     </footer> 
-    
-    <div class="card-grid-container">
-        <?php require 'partials/modals.php'?>
-        <div id="noteContainer"></div>
-    </div>
+    <?php require 'partials/modals.php'?>
+
 </body>
 </html>
