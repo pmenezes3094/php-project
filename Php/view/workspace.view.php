@@ -38,6 +38,10 @@
         <button onclick="openModal('documentModal')">Document</button> -->
     </footer> 
     
-    <?php require 'partials/modals.php'?>
+    <div class="card-grid-container">
+        <?php require 'partials/modals.php'?>
+        <div id="noteContainer">
+    </div>
+</div>
 </body>
 </html>
