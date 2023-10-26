@@ -29,6 +29,8 @@
         <button onclick="openModal('photoModal')">Photo</button>
         <button onclick="openModal('videoModal')">Video</button>
         <button onclick="openModal('documentModal')">Document</button>
-    </footer>   
+    </footer> 
+    
+    <?php require 'partials/modals.php'?>
 </body>
 </html>
