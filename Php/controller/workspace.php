@@ -17,9 +17,14 @@ $stmt->execute();
 
 $result = $stmt->fetchAll();
 
-    //if more than one result store in array variable
-        // run a loop until end of array
-            // store card html structure in variable along with retrived text note
-            //on workspace page create card using that variavle
+if (count($result) > 0) 
+{
+    // run a loop until end of array
+        // store card html structure in variable along with retrived text note
+        //on workspace page create card using that variavle
+}
+else
+{
     //else do nothing
+}
 ?>
