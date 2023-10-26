@@ -5,7 +5,7 @@
     <header>
     <?php require 'partials/logo.php'; ?>
         <div>
-            <p>Welcome, <?php $_SESSION['fullname'] ?></p>
+            <p>Welcome, <?php echo $username ?></p>
             <a href="#">Workspace</a>
             <a href="comingSoon.html">Website</a>
         </div>

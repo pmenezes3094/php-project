@@ -31,9 +31,6 @@ if ($user)
         $_SESSION['username'] = $user['username'];
         $_SESSION['fullname'] = $user['fullname'];
 
-        $fullname = $_SESSION['fullname'];
-        $username = $_SESSION['username'];
-
         echo '<script>alert("Login Successful");</script>';
         echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
