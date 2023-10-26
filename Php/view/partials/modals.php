@@ -21,7 +21,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('textNoteModal')">&times;</span>
             <h2>Add Text Note</h2>
-            <form>
+            <form action="../../controller/usernote.php" method="POST">
                 <label for="textNote">Text Note:</label>
                 <textarea id="textNote" name="textNote" rows="4" required></textarea>
                 <label for="tags">Tags:</label>
