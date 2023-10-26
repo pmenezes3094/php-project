@@ -14,4 +14,13 @@ $stmt = $conn->prepare($sql);
 
 $stmt->bindParam(':textNote', $textNote, PDO::PARAM_STR);
 $stmt->execute();
+
+if ($stmt->execute()) {
+    echo '<script>alert("Text Note Saved");</script>';
+    echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+} 
+else 
+{
+    echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+}
 ?>
