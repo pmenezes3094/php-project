@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Styles/style.css">
-    <title>Workspace</title>
-    <script src="Scripts/onLoad.js"></script>
-    <script src="../../Scripts/script.js"></script>
-</head>
+<?php require 'partials/htmlhead.php'; ?>
 <body>
     <header>
-        <div class="logo">
-            <img src="../../Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
-        </div>
+    <?php require 'partials/logo.php'; ?>
         <div>
             <a href="#">Workspace</a>
             <a href="comingSoon.html">Website</a>
