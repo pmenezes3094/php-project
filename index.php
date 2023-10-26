@@ -14,7 +14,7 @@
                 <img src="Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
             </div>
             <h2>Login</h2>
-            <form action="login.php" method="POST">
+            <form action="logincheck.php" method="POST">
                 <label for="user_id">User ID:</label>
                 <input type="text" id="user_id" name="user_id" required>
 
