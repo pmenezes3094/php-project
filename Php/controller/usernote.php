@@ -8,4 +8,8 @@ $conn = new PDO($dsn, $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $textNote = $_POST['textNote'];
+
+$sql = "INSERT INTO userNotes (textNote) VALUES (:textNote)";
+$stmt = $conn->prepare($sql);
+
 ?>
