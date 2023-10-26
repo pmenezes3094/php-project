@@ -14,9 +14,8 @@ function createTextNote() {
         </div>
     `;
 
-    const noteContainer = document.getElementById("noteContainer");
-    noteContainer.insertAdjacentHTML("beforeend", cardHTML);
-
+    var contentHolder = document.getElementById('noteContainer');
+    contentHolder.innerHTML = cardHTML;
     // Close the modal
     closeModal('textNoteModal');
 }
