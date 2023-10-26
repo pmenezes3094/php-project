@@ -19,7 +19,7 @@ $stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
 if ($stmt->execute()) {
     echo '<script>alert("Password updated successfully.");</script>';
-    echo '<script>window.location.href = "index.php";</script>';
+    echo '<script>window.location.href = "../../index.php";</script>';
 } 
 else 
 {

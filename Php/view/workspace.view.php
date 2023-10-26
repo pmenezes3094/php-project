@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="../../Styles/style.css">
     <title>Workspace</title>
     <script src="Scripts/onLoad.js"></script>
-    <script src="Scripts/script.js"></script>
+    <script src="../../Scripts/script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
+            <img src="../../Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
         </div>
         <div>
             <a href="#">Workspace</a>

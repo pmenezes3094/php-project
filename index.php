@@ -14,7 +14,7 @@
                 <img src="Assets/logo.png" alt ="Project Abundance Logo" height="30 px">
             </div>
             <h2>Login</h2>
-            <form action="logincheck.php" method="POST">
+            <form action="Php/controller/login.php" method="POST">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
 
@@ -24,8 +24,8 @@
                 <input type="submit" value="Login" class="form-button">
             </form>
             <div class="button-container">
-                <a href="registrationForm.php">New User Registration</a>
-                <a href="passwordReset.php">Forgot Password</a>
+                <a href="Php/view/register.view.php">New User Registration</a>
+                <a href="Php/view/password.view.php">Forgot Password</a>
             </div>
         </div>
     </div>

@@ -27,7 +27,7 @@ if ($user)
     if ($enteredPassword === $storedPassword)
     {
         echo '<script>alert("Login Successful");</script>';
-        echo '<script>window.location.href = "workspace.php";</script>';
+        echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
     else 
     {
@@ -37,6 +37,6 @@ if ($user)
 else 
 {
     echo '<script>alert("User does not exist");</script>';
-    echo '<script>window.location.href = "index.php";</script>';
+    echo '<script>window.location.href = "../../index.php";</script>';
 }
 ?>

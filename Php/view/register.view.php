@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="../../Styles/style.css">
     <title>Registration Form</title>
-    <script src="Scripts/script.js"></script>
+    <script src="../../Scripts/script.js"></script>
 </head>
 <body>
     <div class="form-container">
         <div class="container">
             <div class="logo">
-                <img src="Assets/logo.png" alt ="Website logo which has words written as Project Abundance by Priya Menezes" height="30 px">
+                <img src="../../Assets/logo.png" alt ="Website logo which has words written as Project Abundance by Priya Menezes" height="30 px">
             </div>
             <h2>Registration Form</h2>
-            <form action="register.php" method="POST" onsubmit="return validatePassword();">
+            <form action="../controller/register.php" method="POST" onsubmit="return validatePassword();">
                 <label for="fullname">Full Name:</label>
                 <input type="text" id="fullname" name="fullname" required>
 
