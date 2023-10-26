@@ -37,5 +37,6 @@ if ($user)
 else 
 {
     echo '<script>alert("User does not exist");</script>';
+    echo '<script>window.location.href = "index.php";</script>';
 }
 ?>
