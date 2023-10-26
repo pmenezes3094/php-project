@@ -20,9 +20,11 @@ $result = $stmt->fetchAll();
 if (count($result) > 0) 
 {
     $notes = $result;
-    // run a loop until end of array
+    foreach ($notes as $note) 
+    {
         // store card html structure in variable along with retrived text note
         //on workspace page create card using that variavle
+    }
 }
 else
 {
