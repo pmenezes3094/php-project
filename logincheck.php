@@ -13,6 +13,8 @@ $sql = "SELECT password FROM user WHERE username = :username";
 $stmt->bindParam(':username', $username);
 $stmt->execute();
 
+$user = $stmt->fetch();
+
 // if ($stmt->execute()) {
 //     echo '<script>alert("Login Successful");</script>';
 //     echo '<script>window.location.href = "workspace.php";</script>';
