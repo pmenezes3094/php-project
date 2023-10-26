@@ -15,7 +15,8 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 
-//check for number of results
+$result = $stmt->fetchAll();
+
     //if more than one result store in array variable
         // run a loop until end of array
             // store card html structure in variable along with retrived text note
