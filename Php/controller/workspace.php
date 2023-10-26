@@ -22,7 +22,16 @@ if (count($result) > 0)
     $notes = $result;
     foreach ($notes as $note) 
     {
-        // store card html structure in variable along with retrived text note
+        $textNote = $note['text_note'];
+            $cardHTML = "
+                <div class='card-grid-item'>
+                    <div class='card-content'>
+                        <p>
+                            $textNote
+                        </p>
+                    </div>
+                </div>
+            ";
         //on workspace page create card using that variavle
     }
 }
