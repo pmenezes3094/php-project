@@ -23,7 +23,7 @@ if ($user)
 } 
 else 
 {
-    echo '<script>alert("Login Successful");</script>';
+    echo '<script>alert("User does not exist");</script>';
 }
 
 // if ($stmt->execute()) {
