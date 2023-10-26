@@ -9,63 +9,64 @@ function createTextNote() {
     // Close the modal
     closeModal('textNoteModal');
 }
-// Function to save the URL
-function saveURL() {
-    // Retrieve values from form fields
-    const url = document.getElementById("url").value;
-    const linkName = document.getElementById("linkName").value;
-    const tags = document.getElementById("tags").value;
 
-    // logic to handle the data comes here
+// // Function to save the URL
+// function saveURL() {
+//     // Retrieve values from form fields
+//     const url = document.getElementById("url").value;
+//     const linkName = document.getElementById("linkName").value;
+//     const tags = document.getElementById("tags").value;
 
-    // Close the modal
-    closeModal('urlModal');
-}
+//     // logic to handle the data comes here
 
-// Function to save the audio
-function saveAudio() {
-    // Retrieve values from form fields
-    const audioFile = document.getElementById("audioFile").value;
-    const tags = document.getElementById("tags").value;
+//     // Close the modal
+//     closeModal('urlModal');
+// }
 
-    // logic to handle the audio comes here
+// // Function to save the audio
+// function saveAudio() {
+//     // Retrieve values from form fields
+//     const audioFile = document.getElementById("audioFile").value;
+//     const tags = document.getElementById("tags").value;
 
-    // Close the modal
-    closeModal('audioModal');
-}
+//     // logic to handle the audio comes here
 
-// Function to save the photo
-function savePhoto() {
-    // Retrieve values from form fields
-    const photoFile = document.getElementById("photoFile").value;
-    const tags = document.getElementById("tags").value;
+//     // Close the modal
+//     closeModal('audioModal');
+// }
 
-    // logic to handle the photo
+// // Function to save the photo
+// function savePhoto() {
+//     // Retrieve values from form fields
+//     const photoFile = document.getElementById("photoFile").value;
+//     const tags = document.getElementById("tags").value;
 
-    // Close the modal
-    closeModal('photoModal');
-}
+//     // logic to handle the photo
 
-// Function to save the video
-function saveVideo() {
-    // Retrieve values from form fields
-    const videoFile = document.getElementById("videoFile").value;
-    const tags = document.getElementById("tags").value;
+//     // Close the modal
+//     closeModal('photoModal');
+// }
 
-    //logic to handle the video comes here
+// // Function to save the video
+// function saveVideo() {
+//     // Retrieve values from form fields
+//     const videoFile = document.getElementById("videoFile").value;
+//     const tags = document.getElementById("tags").value;
 
-    // Close the modal
-    closeModal('videoModal');
-}
+//     //logic to handle the video comes here
 
-// Function to save the document
-function saveDocument() {
-    // Retrieve values from form fields
-    const documentFile = document.getElementById("documentFile").value;
-    const tags = document.getElementById("tags").value;
+//     // Close the modal
+//     closeModal('videoModal');
+// }
 
-    // logic to handle the document comes here
+// // Function to save the document
+// function saveDocument() {
+//     // Retrieve values from form fields
+//     const documentFile = document.getElementById("documentFile").value;
+//     const tags = document.getElementById("tags").value;
 
-    // Close the modal
-    closeModal('documentModal');
-}
+//     // logic to handle the document comes here
+
+//     // Close the modal
+//     closeModal('documentModal');
+// }
