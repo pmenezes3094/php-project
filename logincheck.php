@@ -7,6 +7,8 @@ $conn = new PDO($dsn, $username, $password);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$username = $_POST["username"];
+
 // if ($stmt->execute()) {
 //     echo '<script>alert("Login Successful");</script>';
 //     echo '<script>window.location.href = "workspace.php";</script>';
