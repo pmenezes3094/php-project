@@ -32,7 +32,7 @@ if (count($result) > 0)
                     </div>
                 </div>
             ";
-        //on workspace page create card using that variavle
+            echo $cardHTML;
     }
 }
 else
