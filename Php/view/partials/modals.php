@@ -14,7 +14,7 @@
         </div>
     </div>
 
-<!-- The URL Modal -->
+<!-- Modals
 <div id="urlModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('urlModal')">&times;</span>
@@ -32,7 +32,6 @@
         </div>
     </div>
 
-    <!-- The Audio Modal -->
     <div id="audioModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('audioModal')">&times;</span>
@@ -50,7 +49,6 @@
         </div>
     </div>
 
-    <!-- The Photo Modal -->
     <div id="photoModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('photoModal')">&times;</span>
@@ -68,7 +66,6 @@
         </div>
     </div>
 
-    <!-- The Video Modal -->
     <div id="videoModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('videoModal')">&times;</span>
@@ -85,7 +82,6 @@
         </div>
     </div>
 
-    <!-- The Document Modal -->
     <div id="documentModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('documentModal')">&times;</span>
@@ -99,4 +95,4 @@
             <button class="modal-close-button" onclick="closeModal('documentModal')">Close</button>
             <button class="modal-save-button" onclick="saveDocument()">Save</button>
         </div>
-    </div>
+    </div> -->
