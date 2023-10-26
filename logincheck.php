@@ -34,12 +34,4 @@ else
 {
     echo '<script>alert("User does not exist");</script>';
 }
-// if ($stmt->execute()) {
-//     echo '<script>alert("Login Successful");</script>';
-//     echo '<script>window.location.href = "workspace.php";</script>';
-// } 
-// else 
-// {
-//     echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
-// }
 ?>
