@@ -22,13 +22,17 @@ if ($user)
     $password = $user['password'];
 
     //Algorithm to check password
-        //store password from input field in a variable
-        //store password from database in another vaiabe
-        //check login if both password match 
-        //if match -> alert login successful
-            //echo '<script>alert("Login Successful");</script>';
-            //echo '<script>window.location.href = "workspace.php";</script>';
-        // else echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+    $enteredPassword = $_POST["password"]; 
+    $storedPassword = $user['password'];
+    if ($enteredPassword === $storedPassword)
+    {
+        echo '<script>alert("Login Successful");</script>';
+        echo '<script>window.location.href = "workspace.php";</script>';
+    }
+    else 
+    {
+        echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+    }
 } 
 else 
 {
