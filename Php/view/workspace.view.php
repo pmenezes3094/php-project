@@ -26,7 +26,6 @@
         </div>
     
         <?php require 'partials/dummycards.php'?>
-        <div id="noteContainer"></div>
     </main>
 
         
