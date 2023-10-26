@@ -4,9 +4,9 @@ session_start();
 $stmt = null;
 $dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
 $dbusername = 'da'; 
-$password = 123; 
+$dbpassword = 123; 
 
-$conn = new PDO($dsn, $dbusername, $password);
+$conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
