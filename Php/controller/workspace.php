@@ -1,5 +1,7 @@
 <?php
-//start session and save username for dataretrival
+session_start(); 
+$username = $_SESSION['username'];
+
 //make connection with database
 //create and execute a select query to retrive all text notes
 //check for number of results
