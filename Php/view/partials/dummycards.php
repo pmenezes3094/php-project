@@ -35,4 +35,7 @@
             </a>
         </div>
     </div>
+
+    <div id="noteContainer">
+    </div>
 </div>
