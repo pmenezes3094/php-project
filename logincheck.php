@@ -9,6 +9,8 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $username = $_POST["username"];
 
+$sql = "SELECT password FROM user WHERE username = :username";
+
 // if ($stmt->execute()) {
 //     echo '<script>alert("Login Successful");</script>';
 //     echo '<script>window.location.href = "workspace.php";</script>';
