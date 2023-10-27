@@ -21,7 +21,7 @@ if (count($result) > 0)
     $notes = $result;
     foreach ($notes as $note) 
     {
-        $textNote = $note['text_note'];
+        $textNote = $note['textNote'];
             $cardHTML = "
                 <div class='card-grid-item'>
                     <div class='card-content'>
