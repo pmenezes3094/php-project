@@ -12,7 +12,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // grab the note content
 // create sql query to delete record which belongs to particular username(grabed from session) and id(of the selected content)
-//prepare sql query
+$stmt = $conn->prepare($sql);
 //bind parameters
 //execute query 
 // if query executed successfully 
