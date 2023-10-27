@@ -31,6 +31,7 @@ if (count($result) > 0)
                         </p>
                     </div>
                     <form action='run.php' method='post'>
+                        <input type='hidden' name='id' value='$id'>
                         <button type='submit'>Delete</button>
                     </form>
                 </div>
