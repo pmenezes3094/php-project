@@ -18,7 +18,7 @@ $stmt = $conn->prepare($sql);
 if ($stmt->execute()) 
 {
     echo '<script>alert("Card deleted sucessfully");</script>';
-    echo '<script>window.location.href = "../workspace.php";</script>';
+    echo '<script>window.location.href = "../workspace.view.php";</script>';
 } 
 else 
 {
