@@ -10,7 +10,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// grab the note content
+$id = $_POST['id'];
 $sql = "DELETE FROM usernotes WHERE username = :username AND id = :id";
 $stmt = $conn->prepare($sql);
 //bind parameters
