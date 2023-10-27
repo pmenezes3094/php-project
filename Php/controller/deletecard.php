@@ -13,7 +13,8 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = $_POST['id'];
 $sql = "DELETE FROM usernotes WHERE username = :username AND id = :id";
 $stmt = $conn->prepare($sql);
-//bind parameters
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 if ($stmt->execute()) 
 {
     echo '<script>alert("Card deleted sucessfully");</script>';
