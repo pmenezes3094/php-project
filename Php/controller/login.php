@@ -40,6 +40,7 @@ if ($user)
     else 
     {
         echo '<script>alert("Username and password do not match");</script>';
+        echo '<script>window.location.href = "../../index.php";</script>';
     }
 } 
 else 
