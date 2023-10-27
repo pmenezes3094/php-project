@@ -12,8 +12,6 @@
                 echo $fullname; 
                 ?>
             </p>
-            <a href="#">Workspace</a>
-            <a href="comingSoon.html">Website</a>
         </div>
         <form action="../controller/logout.php" method="POST">
             <input type="submit" value="Logout" class="form-button">
