@@ -9,7 +9,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT textNote FROM usernotes WHERE username = :username";
+$sql = "SELECT id, textNote FROM usernotes WHERE username = :username";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
