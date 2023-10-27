@@ -1,6 +1,5 @@
 <?php
-//Algorith to delete card
-//Grab username from current session
+$_SESSION['username'] = $user['username'];
 // Create database connection
 // grab the note content
 // create sql query to delete record which belongs to particular username(grabed from session) and id(of the selected content)
