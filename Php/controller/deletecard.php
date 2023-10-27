@@ -11,7 +11,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // grab the note content
-// create sql query to delete record which belongs to particular username(grabed from session) and id(of the selected content)
+$sql = "DELETE FROM usernotes WHERE username = :username AND id = :id";
 $stmt = $conn->prepare($sql);
 //bind parameters
 if ($stmt->execute()) 
