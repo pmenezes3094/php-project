@@ -27,9 +27,7 @@
 
         <div class="card-grid-container">
             <?php require 'partials/dummycards.php'?>
-            <div id="newNotes">
-                <?php require '../controller/workspace.php' ?>
-            </div>
+            <?php require '../controller/workspace.php' ?>
         </div>
     </main>
 
