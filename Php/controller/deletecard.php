@@ -1,5 +1,6 @@
 <?php
-$_SESSION['username'] = $user['username'];
+session_start();
+$username = $_SESSION['username'];
 
 $stmt = null;
 $dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
