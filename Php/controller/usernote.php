@@ -17,7 +17,7 @@ $stmt = $conn->prepare($sql);
 
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->bindParam(':textNote', $textNote, PDO::PARAM_STR);
-$stmt->execute();
+// $stmt->execute();
 
 if ($stmt->execute()) {
     echo '<script>alert("Text Note Saved");</script>';
