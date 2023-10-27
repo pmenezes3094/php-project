@@ -7,7 +7,6 @@
         <div>
             <p>Welcome, 
                 <?php 
-                session_start(); 
                 $fullname = $_SESSION['fullname'];
                 echo $fullname; 
                 ?>
