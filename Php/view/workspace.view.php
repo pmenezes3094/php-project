@@ -15,7 +15,9 @@
             <a href="#">Workspace</a>
             <a href="comingSoon.html">Website</a>
         </div>
-        <button id="logoutButton" onclick="goToHomePage()">Logout</button>
+        <form action="../controller/logout.php" method="POST">
+            <input type="submit" value="Logout" class="form-button">
+        </form>
     </header>
 
     <main>
