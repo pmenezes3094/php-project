@@ -14,9 +14,14 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // create sql query to delete record which belongs to particular username(grabed from session) and id(of the selected content)
 $stmt = $conn->prepare($sql);
 //bind parameters
-//execute query 
-// if query executed successfully 
-    // show alert that item deleted sucessfully
-    // redirect page to index workspace page
+if ($stmt->execute()) 
+{
+    echo '<script>alert("Card deleted sucessfully");</script>';
+    echo '<script>window.location.href = "../workspace.php";</script>';
+} 
+else 
+{
+
+}
 //else show alert that card couldnt be deleted. please try again
 ?>
