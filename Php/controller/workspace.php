@@ -29,6 +29,9 @@ if (count($result) > 0)
                             $textNote
                         </p>
                     </div>
+                    <form action='run.php' method='post'>
+                        <button type='submit'>Delete</button>
+                    </form>
                 </div>
             ";
             echo $cardHTML;
