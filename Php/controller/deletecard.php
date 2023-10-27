@@ -21,7 +21,6 @@ if ($stmt->execute())
 } 
 else 
 {
-
+    echo '<script>alert("Card deletion uncsucessful. Please try again");</script>';
 }
-//else show alert that card couldnt be deleted. please try again
 ?>
