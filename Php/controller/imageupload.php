@@ -10,6 +10,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $filename = $_FILES['image']['name'];
         $fileextension = pathinfo($filenname, PATHINFO_EXTENSION);
 
+        $newfilename = preg_replace('/[^A-z0-9]/','-',$filename);
+        $i=0;
+        while(file_exists($uploaddirectory.$filename))
+        {
+            $i=$i+1;
+            $filename = $newfilename.$i.'.'.$extension; 
+        }
     }
     else 
     {
