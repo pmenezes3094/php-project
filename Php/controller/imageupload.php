@@ -6,6 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
         $upload_directory = "../../../php-project-file/image/"; 
         $allowed_extensions = array("jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg");  
+
+        $filename = $_FILES['image']['name'];
     }
 }
 ?>
