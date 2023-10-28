@@ -22,7 +22,7 @@
                 <button class="open-camera-button">Open Camera</button>
 
                 <label for="photoFile">Upload Photo File:</label>
-                <input type="file" id="photoFile" name="photoFile">
+                <input type="file" id="photoFile" name="image" accept="image/*" required>
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
             </form>
