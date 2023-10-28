@@ -17,6 +17,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             $i=$i+1;
             $newfilename = $newfilename . $i . '.' . $fileextension;
         }
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $uploaddirectory . $newfilename)) 
+        {
+            
+            echo '<script>alert("File uploaded sucessfully");</script>';
+            echo '<script>window.location.href = "workspace.view.php";</script>';
+        } 
+        else 
+        {
+            echo '<script>alert("File could not be uploded. please try again");</script>';
+            echo '<script>window.location.href = "workspace.view.php";</script>';
+        }
     }
     else 
     {
