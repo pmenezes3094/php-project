@@ -11,5 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $fileextension = pathinfo($filenname, PATHINFO_EXTENSION);
 
     }
+    else 
+    {
+        echo '<script>alert("Image could not be uploded");</script>';
+        echo '<script>window.location.href = "workspace.view.php";</script>';
+    }
 }
 ?>
