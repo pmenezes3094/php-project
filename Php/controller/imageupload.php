@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
             session_start();
             $_SESSION['filepath'] = $filepath;
-            
+
             echo '<script>alert("File uploaded sucessfully");</script>';
             echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         } 
@@ -40,4 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
 }
+require 'imagedatabaseentry.php';
 ?>
