@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $allowedextensions = array("jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg");  
 
         $filename = $_FILES['image']['name'];
-        $fileextension = pathinfo($filenname, PATHINFO_EXTENSION);
+        $fileextension = pathinfo($filename, PATHINFO_EXTENSION);
 
         $newfilename = preg_replace('/[^A-z0-9]/','-',$filename);
         $i=0;
