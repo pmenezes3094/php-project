@@ -11,4 +11,10 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
+$stmt = $conn->prepare($sql);
+
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+$stmt->bindParam(':textNote', $filepath, PDO::PARAM_STR);
+
 ?>
