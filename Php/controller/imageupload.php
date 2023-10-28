@@ -12,10 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
         $newfilename = preg_replace('/[^A-z0-9]/','-',$filename);
         $i=0;
-        while(file_exists($uploaddirectory.$filename))
+        while(file_exists($uploaddirectory.$newfilename))
         {
             $i=$i+1;
-            $filename = $newfilename.$i.'.'.$extension; 
+            $newfilename = $newfilename . $i . '.' . $fileextension;
         }
     }
     else 
