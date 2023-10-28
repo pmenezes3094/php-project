@@ -14,6 +14,23 @@
         </div>
     </div>
 
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('photoModal')">&times;</span>
+            <h2>Add Photo</h2>
+            <form>
+                <button class="open-camera-button">Open Camera</button>
+
+                <label for="photoFile">Upload Photo File:</label>
+                <input type="file" id="photoFile" name="photoFile">
+                <label for="tags">Tags:</label>
+                <textarea id="tags" name="tags" rows="4" required></textarea>
+            </form>
+            <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
+            <button class="modal-save-button" onclick="savePhoto()">Save</button>
+        </div>
+    </div>
+
 <!-- Modals
 <div id="urlModal" class="modal">
         <div class="modal-content">
@@ -46,23 +63,6 @@
             </form>
             <button class="modal-close-button" onclick="closeModal('audioModal')">Close</button>
             <button class="modal-save-button" onclick="saveAudio()">Save</button>
-        </div>
-    </div>
-
-    <div id="photoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('photoModal')">&times;</span>
-            <h2>Add Photo</h2>
-            <form>
-                <button class="open-camera-button">Open Camera</button>
-
-                <label for="photoFile">Upload Photo File:</label>
-                <input type="file" id="photoFile" name="photoFile">
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
-            </form>
-            <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
-            <button class="modal-save-button" onclick="savePhoto()">Save</button>
         </div>
     </div>
 
