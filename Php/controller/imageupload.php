@@ -21,6 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         if (move_uploaded_file($_FILES['image']['tmp_name'], $uploaddirectory . $newfilename)) 
         {
             $filepath = $uploaddirectory . $newfilename;
+
+            session_start();
+            $_SESSION['filepath'] = $filepath;
+            
             echo '<script>alert("File uploaded sucessfully");</script>';
             echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         } 
