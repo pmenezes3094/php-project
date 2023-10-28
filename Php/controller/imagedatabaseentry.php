@@ -17,4 +17,6 @@ $stmt = $conn->prepare($sql);
 $stmt->bindParam(':username', $username, PDO::PARAM_STR);
 $stmt->bindParam(':textNote', $filepath, PDO::PARAM_STR);
 
+$stmt->execute()
+
 ?>
