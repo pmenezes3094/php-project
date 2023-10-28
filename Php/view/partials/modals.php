@@ -18,7 +18,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('photoModal')">&times;</span>
             <h2>Add Photo</h2>
-            <form>
+            <form action="../controller/imageupload.php" method="post" enctype="multipart/form-data">
                 <button class="open-camera-button">Open Camera</button>
 
                 <label for="photoFile">Upload Photo File:</label>
