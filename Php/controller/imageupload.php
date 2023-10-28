@@ -22,18 +22,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             
             echo '<script>alert("File uploaded sucessfully");</script>';
-            echo '<script>window.location.href = "workspace.view.php";</script>';
+            echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         } 
         else 
         {
             echo '<script>alert("File could not be uploded. please try again");</script>';
-            echo '<script>window.location.href = "workspace.view.php";</script>';
+            echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         }
     }
     else 
     {
         echo '<script>alert("Image could not be uploded");</script>';
-        echo '<script>window.location.href = "workspace.view.php";</script>';
+        echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
 }
 ?>
