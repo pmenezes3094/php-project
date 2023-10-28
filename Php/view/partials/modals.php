@@ -25,9 +25,9 @@
                 <input type="file" id="photoFile" name="image" accept="image/*" required>
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
+                <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
-            <button class="modal-save-button" onclick="savePhoto()">Save</button>
         </div>
     </div>
 
