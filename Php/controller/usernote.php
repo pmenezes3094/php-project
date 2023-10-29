@@ -13,7 +13,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $textNote = $_POST['textNote'];
 
 // $sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
-$sql = "INSERT INTO item (itemDetail,itemTypeId,userId) VALUES (:textNote,:itemTypeId,:userId)";
+$sql = "INSERT INTO item (itemDetail,itemTypeId,userId) VALUES (:itemDetail,:itemTypeId,:userId)";
 $stmt = $conn->prepare($sql);
 
 $stmt->bindParam(':itemDetail', $username, PDO::PARAM_STR);
