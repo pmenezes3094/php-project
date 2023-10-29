@@ -11,12 +11,16 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $userIdSql = "SELECT userId FROM user WHERE username = $username";
-$itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = 'textNote'";
+$stmt = $conn->prepare($userIdSql);
+$stmt->bindParam(':username', $username, PDO::PARAM_STR);
+$stmt->execute();
+$stmt = $userStmt->fetch();
 
-$userStmt = $conn->prepare($userIdSql);
-$userStmt->bindParam(':username', $username, PDO::PARAM_STR);
-$userStmt->execute();
-$userId = $userStmt->fetch();
+$itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = 'textNote'";
+$stmt = $conn->prepare($itemTypeIDSql);
+$stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_STR);
+$stmt->execute();
+$itemTypeId = $stmt->fetch();
 
 $itemDetail = $_POST['textNote'];
 
