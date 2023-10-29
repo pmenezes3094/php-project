@@ -22,7 +22,7 @@ if (count($result) > 0)
     foreach ($notes as $note) 
     {
         $textNote = $note['itemDetail'];
-        $id = $note['itemId'];
+        $itemId = $note['itemId'];
             $cardHTML = "
                 <div class='card-grid-item'>
                     <div class='card-content'>
@@ -31,7 +31,7 @@ if (count($result) > 0)
                         </p>
                     </div>
                     <form action='../controller/test.php' method='post'>
-                        <input type='hidden' name='id' value='$id'>
+                        <input type='hidden' name='itemId' value='$itemId'>
                         <button type='submit'>Delete</button>
                     </form>
                 </div>

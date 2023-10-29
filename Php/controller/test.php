@@ -11,8 +11,8 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$id = $_POST['id'];
-$sql = "DELETE FROM item WHERE userId = :userId AND itemId = :id";
+$itemId = $_POST['itemId'];
+$sql = "DELETE FROM item WHERE userId = :userId AND itemId = :itemId";
 $stmt = $conn->prepare($sql);
     $stmt->bindParam(':userId', $userId, PDO::PARAM_STR);
     $stmt->bindParam(':itemId', $itemId, PDO::PARAM_INT);
