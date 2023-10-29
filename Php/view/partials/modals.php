@@ -1,24 +1,9 @@
     <!-- The Text Note Modal -->
-    <div id="testModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('testModal')">&times;</span>
-            <h2>Add Text Note</h2>
-            <form action="../controller/createTextNote.php" method="POST" onsubmit="createTextNote()">
-                <label for="textNote">Text Note:</label>
-                <textarea id="textNote" name="textNote" rows="4" required></textarea>
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
-                <input type="submit" value="Save" class="form-button">
-            </form>
-            <button class="modal-close-button" onclick="closeModal('testModal')">Close</button>
-        </div>
-    </div>
-
     <div id="textNoteModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('textNoteModal')">&times;</span>
             <h2>Add Text Note</h2>
-            <form action="../controller/usernote.php" method="POST" onsubmit="createTextNote()">
+            <form action="../controller/createTextNote.php" method="POST" onsubmit="createTextNote()">
                 <label for="textNote">Text Note:</label>
                 <textarea id="textNote" name="textNote" rows="4" required></textarea>
                 <label for="tags">Tags:</label>
