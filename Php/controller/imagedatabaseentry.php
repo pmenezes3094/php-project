@@ -11,6 +11,12 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'image'";
+$itemTypeStmt = $conn->prepare($itemTypeSql);
+$itemTypeStmt->execute();
+$itemTypeResult = $itemTypeStmt->fetch();
+$itemTypeId = $itemTypeResult['itemTypeId'];
+
 $sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
 $stmt = $conn->prepare($sql);
 
