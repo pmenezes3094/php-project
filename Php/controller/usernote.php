@@ -10,7 +10,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$itemDetail = $_POST['itemDetail'];
+$itemDetail = $_POST['textNote'];
 
 // $sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
 $sql = "INSERT INTO item (itemDetail,itemTypeId,userId) VALUES (:itemDetail,:itemTypeId,:userId)";
