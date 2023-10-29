@@ -16,4 +16,10 @@ $userStmt->execute();
 $userResult = $userStmt->fetch();
 $userId = $userResult['userId'];
 
+$itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'textNote'";
+$itemTypeStmt = $conn->prepare($itemTypeSql);
+$itemTypeStmt->execute();
+$itemTypeResult = $itemTypeStmt->fetch();
+$itemTypeId = $itemTypeResult['itemTypeId'];
+
 ?>
