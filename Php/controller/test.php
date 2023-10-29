@@ -12,10 +12,10 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $id = $_POST['id'];
-$sql = "DELETE FROM item WHERE userId = :userId AND id = :id";
+$sql = "DELETE FROM item WHERE userId = :userId AND itemId = :id";
 $stmt = $conn->prepare($sql);
     $stmt->bindParam(':userId', $userId, PDO::PARAM_STR);
-    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->bindParam(':itemId', $itemId, PDO::PARAM_INT);
 if ($stmt->execute()) 
 {
     echo '<script>alert("Card deleted sucessfully");</script>';
