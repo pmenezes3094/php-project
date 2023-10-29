@@ -39,8 +39,8 @@
             <form>
                 <label for="url">Link:</label>
                 <input type="url" id="url" name="url" required>
-                <label for="linkName">Link Name:</label>
-                <input type="text" id="linkName" name="linkName" required>
+                <label for="webLink">Link Name:</label>
+                <input type="text" id="webLink" name="webLink" required>
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
             </form>
