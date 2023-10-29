@@ -30,7 +30,7 @@ if (count($result) > 0)
                             $textNote
                         </p>
                     </div>
-                    <form action='../controller/test.php' method='post'>
+                    <form action='../controller/deleteCard.php' method='post'>
                         <input type='hidden' name='itemId' value='$itemId'>
                         <button type='submit'>Delete</button>
                     </form>
