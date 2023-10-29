@@ -42,7 +42,7 @@
                 <textarea id="tags" name="tags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
-            <button class="modal-save-button" onclick="saveURL()">Save</button>
+            <button class="modal-close-button" onclick="closeModal('urlModal')">Close</button>
         </div>
     </div>
 
