@@ -9,7 +9,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT itemId, itemDetail FROM item WHERE userId = :userId";
+$sql = "SELECT itemId, itemDetail, itemTypeId FROM item WHERE userId = :userId";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(':userId', $userId, PDO::PARAM_STR);
 $stmt->execute();
@@ -21,13 +21,14 @@ if (count($result) > 0)
     $notes = $result;
     foreach ($notes as $note) 
     {
-        $textNote = $note['itemDetail'];
+        $itemDetail = $note['itemDetail'];
         $itemId = $note['itemId'];
+        $itemTypeId = $note['itemTypeId'];
             $cardHTML = "
                 <div class='card-grid-item'>
                     <div class='card-content'>
                         <p>
-                            $textNote
+                            $itemDetail
                         </p>
                     </div>
                     <form action='../controller/deleteCard.php' method='post'>

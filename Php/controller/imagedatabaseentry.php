@@ -24,5 +24,4 @@ $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
 
 $stmt->execute();
-
 ?>
