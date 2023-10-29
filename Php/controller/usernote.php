@@ -10,7 +10,8 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$userSql = "SELECT userId FROM user WHERE username = $username";
+$userIdSql = "SELECT userId FROM user WHERE username = $username";
+$itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = 'textNote'";
 
 $itemDetail = $_POST['textNote'];
 
