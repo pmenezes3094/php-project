@@ -17,11 +17,11 @@ $itemTypeStmt->execute();
 $itemTypeResult = $itemTypeStmt->fetch();
 $itemTypeId = $itemTypeResult['itemTypeId'];
 
-$sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
+$sql = "INSERT INTO item (itemDetail, itemTypeId, userId) VALUES (:itemDetail, :itemTypeId, :userId)";
 $stmt = $conn->prepare($sql);
-
-$stmt->bindParam(':username', $username, PDO::PARAM_STR);
-$stmt->bindParam(':textNote', $filepath, PDO::PARAM_STR);
+$stmt->bindParam(':itemDetail', $filepath, PDO::PARAM_STR);
+$stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
+$stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
 
 $stmt->execute();
 
