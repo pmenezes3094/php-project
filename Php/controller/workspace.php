@@ -94,7 +94,19 @@ if (count($result) > 0)
         }
         elseif ($itemType === 'video')
         {
-
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <video controls width=\"300\">
+                        <source src=\"$itemDetail\" type=\"video/mp4\">
+                    </video>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$itemId'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
         }
         elseif ($itemType === 'file') 
         {
