@@ -33,6 +33,7 @@
 
         
     <footer class="functionalities">
+        <button onclick="openModal('testModal')">Test</button>
         <button onclick="openModal('textNoteModal')">Text Note</button>
         <button onclick="openModal('photoModal')">Photo</button>
         <!-- <button onclick="openModal('urlModal')">URL</button>
