@@ -31,20 +31,36 @@ if (count($result) > 0)
         $stmt->execute();
         $itemTypeResult = $stmt->fetch();
         $itemType = $itemTypeResult['itemType'];
-        
-            $cardHTML = "
-                <div class='card-grid-item'>
-                    <div class='card-content'>
-                        <p>
-                            $itemDetail
-                        </p>
-                    </div>
-                    <form action='../controller/deleteCard.php' method='post'>
-                        <input type='hidden' name='itemId' value='$itemId'>
-                        <button type='submit'>Delete</button>
-                    </form>
-                </div>
-            ";
+
+        if ($itemType === 'textNote') 
+        {
+
+        }
+        elseif ($itemType === 'webLink')  
+        {
+
+        }
+        elseif ($itemType === 'image') 
+        {
+
+        }
+        elseif ($itemType === 'audio') 
+        {
+
+        }
+        elseif ($itemType === 'video')
+        {
+
+        }
+        elseif ($itemType === 'file') 
+        {
+
+        }
+        else 
+        {
+            
+        }
+
             echo $cardHTML;
     }
 }
