@@ -24,4 +24,12 @@ $stmt->bindParam(':itemDetail', $itemDetail, PDO::PARAM_STR);
 $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
 
+if ($stmt->execute()) {
+    echo '<script>alert("Text Note Saved");</script>';
+    echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+} 
+else 
+{
+    echo '<script>alert("Error: ' . $stmt->errorInfo()[2] . '");</script>';
+}
 ?>
