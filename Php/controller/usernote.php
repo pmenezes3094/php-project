@@ -13,6 +13,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $userIdSql = "SELECT userId FROM user WHERE username = $username";
 $itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = 'textNote'";
 
+$userStmt = $conn->prepare($userIdSql);
+$userStmt->bindParam(':username', $username, PDO::PARAM_STR);
+$userStmt->execute();
+$userId = $userStmt->fetch();
+
 $itemDetail = $_POST['textNote'];
 
 // $sql = "INSERT INTO userNotes (username, textNote) VALUES (:username, :textNote)";
