@@ -124,10 +124,6 @@ if (count($result) > 0)
             </div>
         ";
         }
-        else 
-        {
-
-        }
 
             echo $cardHTML;
     }
