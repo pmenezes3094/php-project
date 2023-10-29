@@ -16,8 +16,9 @@ $userStmt->bindParam(':username', $username, PDO::PARAM_STR);
 $userStmt->execute();
 $userId = $userStmt->fetch();
 
-$itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = 'textNote'";
+$itemTypeIDSql = "SELECT itemTypeId FROM itemType WHERE itemType = :itemType";
 $itemTypeStmt = $conn->prepare($itemTypeIDSql);
+$userStmt->bindParam(':itemType', 'textNote', PDO::PARAM_STR);
 $itemTypeStmt->execute();
 $itemTypeId = $itemTypeStmt->fetch();
 
