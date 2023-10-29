@@ -9,4 +9,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $itemDetail = $_POST['textNote'];
 
+$userSql = "SELECT userId FROM user WHERE username = :username";
+$userStmt = $conn->prepare($userSql);
+$userStmt->bindParam(':username', $username, PDO::PARAM_STR);
+$userStmt->execute();
+$userResult = $userStmt->fetch();
+$userId = $userResult['userId'];
+
 ?>
