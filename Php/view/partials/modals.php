@@ -35,15 +35,15 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('urlModal')">&times;</span>
             <h2>Add URL</h2>
-            <form>
+            <form action="../controller/createWebLink.php" method="POST" onsubmit="createTextNote()">
                 <label for="url">Link:</label>
                 <input type="url" id="url" name="url" required>
                 <label for="webLink">Link Name:</label>
                 <input type="text" id="webLink" name="webLink" required>
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
+                <input type="submit" value="Save" class="form-button">
             </form>
-            <button class="modal-close-button" onclick="closeModal('urlModal')">Close</button>
             <button class="modal-save-button" onclick="saveURL()">Save</button>
         </div>
     </div>
