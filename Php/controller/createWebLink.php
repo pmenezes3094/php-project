@@ -12,4 +12,10 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $itemDetail = $_POST['webLink'];
 
+$itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'textNote'";
+$itemTypeStmt = $conn->prepare($itemTypeSql);
+$itemTypeStmt->execute();
+$itemTypeResult = $itemTypeStmt->fetch();
+$itemTypeId = $itemTypeResult['itemTypeId'];
+
 ?>
