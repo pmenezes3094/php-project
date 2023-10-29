@@ -16,9 +16,9 @@ $textNote = $_POST['itemDetail'];
 $sql = "INSERT INTO item (itemDetail,itemTypeId,userId) VALUES (:itemDetail,:itemTypeId,:userId)";
 $stmt = $conn->prepare($sql);
 
-$stmt->bindParam(':itemDetail', $username, PDO::PARAM_STR);
-$stmt->bindParam(':itemTypeId', $textNote, PDO::PARAM_STR);
-$stmt->bindParam(':userId', $textNote, PDO::PARAM_STR);
+$stmt->bindParam(':itemDetail', $itemDetail, PDO::PARAM_STR);
+$stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_STR);
+$stmt->bindParam(':userId', $userId, PDO::PARAM_STR);
 
 if ($stmt->execute()) {
     echo '<script>alert("Text Note Saved");</script>';
