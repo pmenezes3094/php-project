@@ -110,7 +110,19 @@ if (count($result) > 0)
         }
         elseif ($itemType === 'file') 
         {
-
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <p>
+                       File Type at location: $itemDetail
+                    </p>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$itemId'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
         }
         else 
         {
