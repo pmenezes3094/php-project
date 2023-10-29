@@ -24,6 +24,14 @@ if (count($result) > 0)
         $itemDetail = $note['itemDetail'];
         $itemId = $note['itemId'];
         $itemTypeId = $note['itemTypeId'];
+
+        $itemTypeSql = "SELECT itemType FROM itemType WHERE itemTypeID = :itemTypeId";
+        $stmt = $pdo->prepare($itemTypeSql);
+        $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
+        $stmt->execute();
+        $itemTypeResult = $stmt->fetch();
+        $itemType = $itemTypeResult['itemType'];
+        
             $cardHTML = "
                 <div class='card-grid-item'>
                     <div class='card-content'>
