@@ -36,8 +36,6 @@
             <span class="close" onclick="closeModal('urlModal')">&times;</span>
             <h2>Add URL</h2>
             <form action="../controller/createWebLink.php" method="POST" onsubmit="createTextNote()">
-                <label for="url">Link:</label>
-                <input type="url" id="url" name="url" required>
                 <label for="webLink">Link Name:</label>
                 <input type="text" id="webLink" name="webLink" required>
                 <label for="tags">Tags:</label>
