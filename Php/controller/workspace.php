@@ -34,7 +34,19 @@ if (count($result) > 0)
 
         if ($itemType === 'textNote') 
         {
-
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <p>
+                        $itemDetail
+                    </p>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$itemId'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
         }
         elseif ($itemType === 'webLink')  
         {
