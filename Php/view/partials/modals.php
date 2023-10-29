@@ -31,8 +31,7 @@
         </div>
     </div>
 
-<!-- Modals
-<div id="urlModal" class="modal">
+    <div id="urlModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('urlModal')">&times;</span>
             <h2>Add URL</h2>
@@ -48,6 +47,8 @@
             <button class="modal-save-button" onclick="saveURL()">Save</button>
         </div>
     </div>
+
+<!-- Modals
 
     <div id="audioModal" class="modal">
         <div class="modal-content">
