@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     if ($_FILES['image']['error'] === 0)
     {
-        $uploaddirectory = "../../../php-project-file/image/"; 
+        $uploaddirectory = "../../../php-project-file/video/"; 
         $allowedextensions = array("jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg");  
 
         $filename = $_FILES['image']['name'];
