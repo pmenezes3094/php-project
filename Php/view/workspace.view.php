@@ -21,8 +21,10 @@
     <main>
         <!-- Div 1: Search Field -->
         <div class="searchField">
-            <input type="text" id="searchField" placeholder="Search...">
-            <button id="searchButton">Search</button>
+            <form action="../controller/search.php" method="POST">
+                <input type="text" id="searchField" placeholder="Search...">
+                <input type="submit" value="Search" class="form-button">  
+            </form>
         </div>
 
         <div class="card-grid-container">
