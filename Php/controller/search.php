@@ -11,5 +11,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$searchItem = $_POST['searchKey'];
+echo $searchItem;
 
 ?>
