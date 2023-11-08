@@ -24,11 +24,18 @@ $itemTypeStmt->execute();
 $itemTypeResult = $itemTypeStmt->fetch();
 $itemTypeId = $itemTypeResult['itemTypeId'];
 
-$sql = "INSERT INTO item (itemDetail, itemTypeId, userId) VALUES (:itemDetail, :itemTypeId, :userId)";
+$tagIdSql = "SELECT tagId FROM tag WHERE tagName = '$textNoteTags'";
+$tagIdStmt = $conn->prepare($tagIdSql);
+$tagIdStmt->execute();
+$tagIdResult = $tagIdStmt->fetch();
+$tagId = $tagIdResult['tagId'];
+
+$sql = "INSERT INTO item (itemDetail, itemTypeId, userId, tagId) VALUES (:itemDetail, :itemTypeId, :userId, :tagId)";
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':itemDetail', $itemDetail, PDO::PARAM_STR);
 $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
+$stmt->bindParam(':tagId', $tagId, PDO::PARAM_INT);
 
 
 if ($stmt->execute()) {
