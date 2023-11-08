@@ -11,7 +11,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'video'";
+$itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'audio'";
 $itemTypeStmt = $conn->prepare($itemTypeSql);
 $itemTypeStmt->execute();
 $itemTypeResult = $itemTypeStmt->fetch();
