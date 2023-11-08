@@ -40,5 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         // echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
 }
-require 'imagedatabaseentry.php';
+require 'videodatabaseentry.php';
 ?>
