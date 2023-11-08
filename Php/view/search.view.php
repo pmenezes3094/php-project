@@ -28,8 +28,7 @@
         </div>
 
         <div class="card-grid-container">
-            <?php require 'partials/dummycards.php'?>
-            <?php require '../controller/workspace.php' ?>
+            <?php require '../controller/search.php' ?>
         </div>
     </main>
 
