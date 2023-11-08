@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     if ($_FILES['image']['error'] === 0)
     {
         $uploaddirectory = "../../../php-project-file/video/"; 
-        $allowedextensions = array("jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg");  
+        $allowedextensions = array("mp4", "webm", "ogv", "avi", "wmv", "flv", "mkv","mov","3gp","3g2","mpeg");  
 
         $filename = $_FILES['image']['name'];
         $fileextension = pathinfo($filename, PATHINFO_EXTENSION);
