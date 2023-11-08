@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     else 
     {
         echo '<script>alert("Audio could not be uploded");</script>';
-        // echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+        echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
 }
 require 'audiodatabaseentry.php';
