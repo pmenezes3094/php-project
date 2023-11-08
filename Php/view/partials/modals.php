@@ -50,15 +50,15 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('videoModal')">&times;</span>
             <h2>Add Video</h2>
-            <form>
+            <form action="../controller/videoupload.php" method="post" enctype="multipart/form-data">
                 <button class="open-camera-button">Open Camera</button>
                 <label for="videoFile">Upload Video File:</label>
                 <input type="file" id="videoFile" name="videoFile" accept="video/*">
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
+                <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('videoModal')">Close</button>
-            <button class="modal-save-button" onclick="saveVideo()">Save</button>
         </div>
     </div>
 
