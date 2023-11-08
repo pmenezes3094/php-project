@@ -62,24 +62,23 @@
         </div>
     </div>
 
-<!-- Modals
-
     <div id="audioModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('audioModal')">&times;</span>
             <h2>Add Audio</h2>
-            <form>
+            <form action="../controller/audioupload.php" method="post" enctype="multipart/form-data">
                 <button class="open-recorder-button">Open Recorder</button>
-
-                <label for="audioFile">Upload Audio File:</label>
-                <input type="file" id="audioFile" name="audioFile">
+                <label for="audio">Upload Audio File:</label>
+                <input type="file" id="audio" name="audio">
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
+                <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('audioModal')">Close</button>
-            <button class="modal-save-button" onclick="saveAudio()">Save</button>
         </div>
     </div>
+
+<!-- Modals
 
     <div id="documentModal" class="modal">
         <div class="modal-content">
