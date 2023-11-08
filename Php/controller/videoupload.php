@@ -2,7 +2,7 @@
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-    if ($_FILES['video']['error'] === 0)
+    if ($_FILES['video']['error'] === UPLOAD_ERR_OK)
     {
         $uploaddirectory = "../../../php-project-file/video/"; 
         $allowedextensions = array("mp4", "webm", "ogv", "avi", "wmv", "flv", "mkv","mov","3gp","3g2","mpeg");  
@@ -36,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
     else 
     {
-        echo '<script>alert("Image could not be uploded");</script>';
-        echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+        echo '<script>alert("Video could not be uploded");</script>';
+        // echo '<script>window.location.href = "../view/workspace.view.php";</script>';
     }
 }
 require 'imagedatabaseentry.php';
