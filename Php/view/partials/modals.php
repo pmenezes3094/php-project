@@ -46,6 +46,22 @@
         </div>
     </div>
 
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('videoModal')">&times;</span>
+            <h2>Add Video</h2>
+            <form>
+                <button class="open-camera-button">Open Camera</button>
+                <label for="videoFile">Upload Video File:</label>
+                <input type="file" id="videoFile" name="videoFile" accept="video/*">
+                <label for="tags">Tags:</label>
+                <textarea id="tags" name="tags" rows="4" required></textarea>
+            </form>
+            <button class="modal-close-button" onclick="closeModal('videoModal')">Close</button>
+            <button class="modal-save-button" onclick="saveVideo()">Save</button>
+        </div>
+    </div>
+
 <!-- Modals
 
     <div id="audioModal" class="modal">
@@ -62,22 +78,6 @@
             </form>
             <button class="modal-close-button" onclick="closeModal('audioModal')">Close</button>
             <button class="modal-save-button" onclick="saveAudio()">Save</button>
-        </div>
-    </div>
-
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('videoModal')">&times;</span>
-            <h2>Add Video</h2>
-            <form>
-                <button class="open-camera-button">Open Camera</button>
-                <label for="videoFile">Upload Video File:</label>
-                <input type="file" id="videoFile" name="videoFile" accept="video/*">
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
-            </form>
-            <button class="modal-close-button" onclick="closeModal('videoModal')">Close</button>
-            <button class="modal-save-button" onclick="saveVideo()">Save</button>
         </div>
     </div>
 
