@@ -98,7 +98,7 @@ if (count($result) > 0)
             <div class='card-grid-item'>
                 <div class='card-content'>
                     <video controls width=\"300\">
-                        <source src=\"$itemDetail\" type=\"video/mp4\">
+                        <source src=\"$itemDetail\">
                     </video>
                 </div>
                 <form action='../controller/deleteCard.php' method='post'>
