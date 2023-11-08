@@ -14,7 +14,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $searchItem = $_POST['searchKey'];
 
 $searchSql = "SELECT i.itemDetail,i.itemTypeId,it.itemType FROM `tag` t,item i,itemtype it where t.tagId=i.tagId and t.tagName='$searchItem'
-and it.itemTypeId=i.itemTypeId";
+and it.itemTypeId=i.itemTypeId and i.userId = '$userId'";
 $searchStmt = $conn->prepare($searchSql);
 $searchStmt->execute();
 $searchResult = $searchStmt->fetchAll();
