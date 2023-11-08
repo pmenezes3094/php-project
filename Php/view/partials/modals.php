@@ -39,7 +39,7 @@
                 <label for="webLink">Link Name:</label>
                 <input type="text" id="webLink" name="webLink" required>
                 <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
+                <textarea id="webLinkTags" name="webLinkTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('urlModal')">Close</button>
