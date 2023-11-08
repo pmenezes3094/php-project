@@ -11,6 +11,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $itemDetail = $_POST['webLink'];
+$webLinkTags = $_POST['webLinkTags'];
 
 $itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'webLink'";
 $itemTypeStmt = $conn->prepare($itemTypeSql);
