@@ -7,7 +7,9 @@ function goToHomePage() {
 
 function goBack() {
     //Redirect back to previous page
-    window.history.back();
+    // window.history.back();
+
+    window.location.href = "workspace.view.php";
 }
 
 //Function to validate that password and re-enter password have same fields

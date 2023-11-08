@@ -25,8 +25,11 @@
 
         
     <footer class="functionalities">
-        <button onclick="goBack()">Clear</button>
+    <form action="workspace.view.php">
+        <button type="submit">Clear</button>
+    </form>
     </footer> 
+    
     <?php require 'partials/modals.php'?>
 
 </body>
