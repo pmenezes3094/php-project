@@ -11,6 +11,7 @@ $conn = new PDO($dsn, $dbusername, $dbpassword);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $itemDetail = $_POST['textNote'];
+$textNoteTags = $_POST['textNoteTags'];
 
 $itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'textNote'";
 $itemTypeStmt = $conn->prepare($itemTypeSql);
