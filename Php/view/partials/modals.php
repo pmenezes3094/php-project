@@ -52,8 +52,8 @@
             <h2>Add Video</h2>
             <form action="../controller/videoupload.php" method="post" enctype="multipart/form-data">
                 <button class="open-camera-button">Open Camera</button>
-                <label for="videoFile">Upload Video File:</label>
-                <input type="file" id="videoFile" name="videoFile" accept="video/*">
+                <label for="video">Upload Video File:</label>
+                <input type="file" id="video" name="video" accept="video/*">
                 <label for="tags">Tags:</label>
                 <textarea id="tags" name="tags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
