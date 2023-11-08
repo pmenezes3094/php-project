@@ -13,6 +13,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $itemDetail = $_POST['webLink'];
 $webLinkTags = $_POST['webLinkTags'];
 
+$tagsql ="INSERT INTO tag (tagName) VALUES (:webLinkTags)";
+$stmt = $conn->prepare($tagsql);
+$stmt->bindParam(':webLinkTags', $webLinkTags, PDO::PARAM_STR);
+$stmt->execute();
+
 $itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'webLink'";
 $itemTypeStmt = $conn->prepare($itemTypeSql);
 $itemTypeStmt->execute();
