@@ -37,8 +37,9 @@
         <button onclick="openModal('photoModal')">Photo</button>
         <button onclick="openModal('urlModal')">URL</button>
         <button onclick="openModal('videoModal')">Video</button>
-        <!-- <button onclick="openModal('audioModal')">Audio</button>
-        <button onclick="openModal('documentModal')">Document</button> -->
+        <button onclick="openModal('audioModal')">Audio</button>
+        
+        <!-- <button onclick="openModal('documentModal')">Document</button> -->
     </footer> 
     <?php require 'partials/modals.php'?>
 
