@@ -21,7 +21,8 @@
     <main>
         <!-- Div 1: Search Field -->
         <div class="searchField">
-        <form action="../controller/search.php" method="POST">
+        <!-- <form action="../controller/search.php" method="POST"> -->
+        <form action="search.view.php" method="POST">
             <input type="text" name="searchKey" placeholder="Search...">
             <input type="submit" value="Search" class="form-button">  
         </form>
