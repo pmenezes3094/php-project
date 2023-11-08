@@ -4,15 +4,6 @@
 <body>
     <header>
     <?php require 'partials/logo.php'; ?>
-        <div>
-            <p>Welcome, 
-                <?php 
-                session_start(); 
-                $fullname = $_SESSION['fullname'];
-                echo $fullname; 
-                ?>
-            </p>
-        </div>
         <form action="../controller/logout.php" method="POST">
             <input type="submit" value="Logout" class="form-button">
         </form>
@@ -21,7 +12,7 @@
     <main>
         <!-- Div 1: Search Field -->
         <div class="searchField">
-        <form action="../controller/search.php" method="POST">
+        <form action="search.view.php" method="POST">
             <input type="text" name="searchKey" placeholder="Search...">
             <input type="submit" value="Search" class="form-button">  
         </form>
@@ -34,13 +25,7 @@
 
         
     <footer class="functionalities">
-        <button onclick="openModal('textNoteModal')">Text Note</button>
-        <button onclick="openModal('photoModal')">Photo</button>
-        <button onclick="openModal('urlModal')">URL</button>
-        <button onclick="openModal('videoModal')">Video</button>
-        <button onclick="openModal('audioModal')">Audio</button>
-        
-        <!-- <button onclick="openModal('documentModal')">Document</button> -->
+        <button onclick="goBack()">Clear</button>
     </footer> 
     <?php require 'partials/modals.php'?>
 
