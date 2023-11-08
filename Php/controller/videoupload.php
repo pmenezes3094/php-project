@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $uploaddirectory = "../../../php-project-file/video/"; 
         $allowedextensions = array("mp4", "webm", "ogv", "avi", "wmv", "flv", "mkv","mov","3gp","3g2","mpeg");  
 
-        $filename = $_FILES['image']['name'];
+        $filename = $_FILES['video']['name'];
         $fileextension = pathinfo($filename, PATHINFO_EXTENSION);
 
         $newfilename = preg_replace('/[^A-z0-9]/','.',$filename);
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             $newfilename = $newfilename . $i . '.' . $fileextension;
         }
 
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $uploaddirectory . $newfilename)) 
+        if (move_uploaded_file($_FILES['video']['tmp_name'], $uploaddirectory . $newfilename)) 
         {
             $filepath = $uploaddirectory . $newfilename;
 
