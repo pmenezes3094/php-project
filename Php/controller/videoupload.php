@@ -2,7 +2,7 @@
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-    if ($_FILES['image']['error'] === 0)
+    if ($_FILES['video']['error'] === 0)
     {
         $uploaddirectory = "../../../php-project-file/video/"; 
         $allowedextensions = array("mp4", "webm", "ogv", "avi", "wmv", "flv", "mkv","mov","3gp","3g2","mpeg");  
