@@ -13,6 +13,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $itemDetail = $_POST['textNote'];
 $textNoteTags = $_POST['textNoteTags'];
 
+$tagsql ="INSERT INTO tag (tagName) VALUES (:textNoteTags)";
+$stmt = $conn->prepare($tagsql);
+$stmt->bindParam(':textNoteTags', $textNoteTags, PDO::PARAM_STR);
+$stmt->execute();
+
 $itemTypeSql = "SELECT itemTypeId FROM itemtype WHERE itemtype = 'textNote'";
 $itemTypeStmt = $conn->prepare($itemTypeSql);
 $itemTypeStmt->execute();
@@ -24,6 +29,7 @@ $stmt = $conn->prepare($sql);
 $stmt->bindParam(':itemDetail', $itemDetail, PDO::PARAM_STR);
 $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
+
 
 if ($stmt->execute()) {
     echo '<script>alert("Text Note Saved");</script>';
