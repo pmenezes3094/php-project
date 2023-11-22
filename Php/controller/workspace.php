@@ -1,9 +1,11 @@
 <?php
 $userId = $_SESSION['userId'];
 
-$dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
-$dbusername = 'da'; 
-$dbpassword = 123; 
+// $dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
+// $dbusername = 'da'; 
+// $dbpassword = 123; 
+
+require 'database.php';
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
