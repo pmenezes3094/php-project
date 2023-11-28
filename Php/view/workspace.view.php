@@ -1,3 +1,8 @@
+<?php 
+    session_start(); 
+    $fullname = $_SESSION['fullname'];
+    $userId = $_SESSION['userId'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'partials/htmlhead.php'; ?>
@@ -5,10 +10,8 @@
     <header>
     <?php require 'partials/logo.php'; ?>
         <div>
-            <p>Welcome, 
+            <p>Welcome,
                 <?php 
-                session_start(); 
-                $fullname = $_SESSION['fullname'];
                 echo $fullname; 
                 ?>
             </p>
@@ -27,13 +30,6 @@
             <input type="submit" value="Search" class="form-button">  
         </form>
         </div>
-
-        <div class="card-grid-container">
-            <?php require 'partials/dummycards.php'?>
-            <?php require '../controller/workspace.php' ?>
-        </div>
-    </main>
-
         
     <footer class="functionalities">
         <button onclick="openModal('textNoteModal')">Text Note</button>
@@ -45,6 +41,12 @@
         <!-- <button onclick="openModal('documentModal')">Document</button> -->
     </footer> 
     <?php require 'partials/modals.php'?>
+
+        <div class="card-grid-container">
+            <?php require 'partials/dummycards.php'?>
+            <?php require '../controller/workspace.php' ?>
+        </div>
+    </main>
 
 </body>
 </html>
