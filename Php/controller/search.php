@@ -51,8 +51,7 @@ if (count($searchResult) > 0)
                     <img src='$searchItemDetail'>
                 </div>
                 <form action='../controller/deleteCard.php' method='post'>
-                    <input type='hidden' name='itemId' value='$itemId'>
-                    <button type='submit'>Delete</button>
+                    <input type='hidden' name='itemId' value='$searchItemType'>
                 </form>
             </div>
         ";
