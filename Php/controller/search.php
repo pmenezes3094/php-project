@@ -80,7 +80,6 @@ if (count($searchResult) > 0)
                 </div>
                 <form action='../controller/deleteCard.php' method='post'>
                     <input type='hidden' name='itemId' value='$searchItemType'>
-                    <button type='submit'>Delete</button>
                 </form>
             </div>
         ";
@@ -96,7 +95,6 @@ if (count($searchResult) > 0)
                 </div>
                 <form action='../controller/deleteCard.php' method='post'>
                     <input type='hidden' name='itemId' value='$searchItemType'>
-                    <button type='submit'>Delete</button>
                 </form>
             </div>
         ";
