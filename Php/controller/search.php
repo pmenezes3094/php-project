@@ -69,6 +69,38 @@ if (count($searchResult) > 0)
             </div>
         ";
         }
+        elseif ($searchItemType === 'audio') 
+        {
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <audio controls>
+                        <source src=\"$searchItemDetail\" type=\"audio/mp3\">
+                    </audio>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$searchItemType'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
+        }
+        elseif ($searchItemType === 'video')
+        {
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <video controls width=\"300\">
+                        <source src=\"$searchItemDetail\">
+                    </video>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$searchItemType'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
+        }
         echo $cardHTML;
     }
 }
