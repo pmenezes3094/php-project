@@ -38,7 +38,7 @@
             <form action="../controller/createWebLink.php" method="POST" onsubmit="createTextNote()">
                 <label for="webLink">Link Name:</label>
                 <input type="text" id="webLink" name="webLink" required>
-                <label for="tags">Tags:</label>
+                <label for="webLinkTags">Tags:</label>
                 <textarea id="webLinkTags" name="webLinkTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
