@@ -56,6 +56,19 @@ if (count($searchResult) > 0)
             </div>
         ";
         }
+        elseif ($searchItemType === 'webLink')  
+        {
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class 'card-content'>
+                <a href=\"$searchItemDetail\" target=\"_blank\">$searchItemDetail</a>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$searchItemType'>
+                </form>
+            </div>
+        ";
+        }
         echo $cardHTML;
     }
 }
