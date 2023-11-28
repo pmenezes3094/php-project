@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     if ($_FILES['image']['error'] === 0)
     {
-        $uploaddirectory = "php-project-file/image/"; 
+        $uploaddirectory = "../../../php-project-file/image/"; 
         $allowedextensions = array("jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg");  
 
         $filename = $_FILES['image']['name'];
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         else 
         {
             echo '<script>alert("File could not be uploded. please try again");</script>';
-            echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+            // echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         }
     }
     else 

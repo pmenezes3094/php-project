@@ -23,8 +23,8 @@
 
                 <label for="photoFile">Upload Photo File:</label>
                 <input type="file" id="photoFile" name="image" accept="image/*" required>
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
+                <label for="imageTags">Tags:</label>
+                <textarea id="imageTags" name="imageTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>

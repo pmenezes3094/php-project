@@ -43,6 +43,20 @@ if (count($searchResult) > 0)
             </div>
         ";
         }
+        elseif ($searchItemType === 'image') 
+        {
+            $cardHTML = "
+            <div class='card-grid-item'>
+                <div class='card-content'>
+                    <img src='$searchItemDetail'>
+                </div>
+                <form action='../controller/deleteCard.php' method='post'>
+                    <input type='hidden' name='itemId' value='$itemId'>
+                    <button type='submit'>Delete</button>
+                </form>
+            </div>
+        ";
+        }
         echo $cardHTML;
     }
 }
