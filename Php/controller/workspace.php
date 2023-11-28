@@ -19,7 +19,7 @@ if (count($result) > 0) {
         $itemId = $note['itemId'];
         $itemTypeId = $note['itemTypeId'];
 
-        $itemTypeSql = "SELECT itemType FROM itemType WHERE itemTypeID = :itemTypeId";
+        $itemTypeSql = "SELECT itemType FROM itemtype WHERE itemTypeID = :itemTypeId";
         $stmt = $pdo->prepare($itemTypeSql);
         $stmt->bindParam(':itemTypeId', $itemTypeId, PDO::PARAM_INT);
         $stmt->execute();
