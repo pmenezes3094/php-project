@@ -3,7 +3,7 @@ session_start();
 $userId = $_SESSION['userId'];
 $filepath = $_SESSION['filepath'];
 
-$imageTags = $_POST['audioTags'];
+$audioTags = $_POST['audioTags'];
 
 // $dsn = "mysql:host=localhost;port=3306;dbname=phpproject;charset=utf8mb4";
 // $dbusername = 'da'; 
