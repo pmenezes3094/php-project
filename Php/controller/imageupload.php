@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         else 
         {
             echo '<script>alert("File could not be uploded. please try again");</script>';
-            // echo '<script>window.location.href = "../view/workspace.view.php";</script>';
+            echo '<script>window.location.href = "../view/workspace.view.php";</script>';
         }
     }
     else 
