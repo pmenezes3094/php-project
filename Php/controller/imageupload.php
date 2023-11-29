@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+session_start();
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
@@ -22,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             $filepath = $uploaddirectory . $newfilename;
 
-            session_start();
             $_SESSION['filepath'] = $filepath;
 
             echo '<script>alert("File uploaded sucessfully");</script>';

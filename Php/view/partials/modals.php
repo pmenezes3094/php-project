@@ -23,8 +23,8 @@
 
                 <label for="photoFile">Upload Photo File:</label>
                 <input type="file" id="photoFile" name="image" accept="image/*" required>
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
+                <label for="imageTags">Tags:</label>
+                <textarea id="imageTags" name="imageTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('photoModal')">Close</button>
@@ -38,7 +38,7 @@
             <form action="../controller/createWebLink.php" method="POST" onsubmit="createTextNote()">
                 <label for="webLink">Link Name:</label>
                 <input type="text" id="webLink" name="webLink" required>
-                <label for="tags">Tags:</label>
+                <label for="webLinkTags">Tags:</label>
                 <textarea id="webLinkTags" name="webLinkTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
@@ -54,8 +54,8 @@
                 <button class="open-camera-button">Open Camera</button>
                 <label for="video">Upload Video File:</label>
                 <input type="file" id="video" name="video" accept="video/*">
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
+                <label for="videoTags">Tags:</label>
+                <textarea id="videoTags" name="videoTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('videoModal')">Close</button>
@@ -70,8 +70,8 @@
                 <button class="open-recorder-button">Open Recorder</button>
                 <label for="audio">Upload Audio File:</label>
                 <input type="file" id="audio" name="audio">
-                <label for="tags">Tags:</label>
-                <textarea id="tags" name="tags" rows="4" required></textarea>
+                <label for="audioTags">Tags:</label>
+                <textarea id="audioTags" name="audioTags" rows="4" required></textarea>
                 <input type="submit" value="Save" class="form-button">
             </form>
             <button class="modal-close-button" onclick="closeModal('audioModal')">Close</button>
